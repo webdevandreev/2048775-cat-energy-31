@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <title>Название проекта</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="manifest" href="/source/manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -12,10 +16,16 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__link" href="#">
-      <img class="main-header__logo main-header__logo--image" src="images/logo.svg" width="33" height="38" alt="логотип магазина cat energy.">
+      <picture>
+        <source media="(min-width: 1200px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desk/logo-desk.svg">
+        <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet/logo-tab.svg">
+        <img class="main-header__logo main-header__logo--image" src="images/logo-mobile/logo-mobile.svg" width="33" height="38" alt="логотип магазина cat energy.">
+      </picture>
     </a>
     <a class="main-header__link" href="#">
-      <img class="main-header__logo main-header__logo--text" src="images/logo-cat-energy.svg" width="101" height="18" alt="название магазина cat energy.">
+      <picture>
+        <img class="main-header__logo main-header__logo--text" src="images/logo-text/logo-text.svg" width="101" height="18" alt="название магазина cat energy.">
+      </picture>
     </a>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
@@ -57,7 +67,7 @@
               Ваш кот весит больше собаки и
               почти утратил способность лазить
               по деревьям? Пора на диету! Cat
-              Energy Slim поможет вашему
+              Energy SLIM поможет вашему
               питомцу сбросить лишний вес.
             </p>
             <a class="promo__catalog-slim" href="#">Каталог slim</a>
