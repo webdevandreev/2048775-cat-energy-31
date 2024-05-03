@@ -1,7 +1,67 @@
+.promo__header {
+  background-color: $-bg-green;
+}
+
 .promo__title {
-  font-family: "Oswald", sans-serif;
-  font-size: 36px;
+  padding: 27px 35px 25px;
+  font-family: "Oswald", "Arilal", sans-serif;
   font-weight: 400;
+  font-size: 36px;
   line-height: 36px;
-  color: #ffffff;
+  color: $-color-white;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.promo__slogan {
+  padding: 0 62px 0 60px;
+  font-family: "Oswald", "Arilal", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $-color-white;
+  text-transform: uppercase;
+}
+
+.promo__program-selection {
+  display: block;
+  width: 280px;
+  height: 40px;
+  padding: 13px 44px;
+  margin: 0 20px;
+  background-color: $-basic-green;
+  font-family: "Oswald", "Arilal", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: $-color-white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.promo__item-title {
+  font-family: "Oswald", "Arilal", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  color: $-color-black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.promo__item-description {
+  padding-left: 20px;
+  font-family: "Lato", "Arilal", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $-color-black;
+}
+
+.promo__catalog-slim,
+.promo__catalog-pro {
+  padding-left: 20px;
+  font-family: "Oswald", "Arilal", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: $-color-black;
+  text-transform: uppercase;
 }

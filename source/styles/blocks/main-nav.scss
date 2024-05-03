@@ -1,3 +1,13 @@
 .main-nav {
-  background-color: #7da2a3;
+  background-color: $-bg-white;
+}
+
+.main-nav__wrapper {
+  padding-left: 20px;
+}
+
+.main-nav__page {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $-color-black;
+  text-transform: uppercase;
 }

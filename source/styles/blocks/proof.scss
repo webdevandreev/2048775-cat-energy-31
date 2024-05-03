@@ -1,3 +1,42 @@
-.proof {
-  background-color: #7da2a3;
+.proof__title {
+  padding-left: 20px;
+  font-family: "Oswald", "Arilal", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $-color-black;
+}
+
+.proof__description {
+  padding-left: 20px;
+  font-family: "Lato", "Arilal", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $-color-black;
+}
+
+.proof__list {
+  padding-left: 20px;
+  font-family: "Oswald", "Arilal", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $-color-black;
+}
+
+.proof__definition {
+  font-family: "Lato", "Arilal", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: $-color-black;
+  text-transform: lowercase;
+}
+
+.proof__cost-price {
+  font-family: "Oswald", "Arilal", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: $-color-black;
+  text-align: center;
+  text-transform: uppercase;
 }
