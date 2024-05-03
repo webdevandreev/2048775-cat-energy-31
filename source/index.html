@@ -15,40 +15,42 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__link" href="#">
-      <picture>
-        <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logodesk.svg">
-        <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logotab.svg">
-        <img class="main-header__logo main-header__logo--image" src="images/logomob.svg" width="33" height="38" alt="логотип магазина cat energy.">
-      </picture>
-    </a>
-    <a class="main-header__link" href="#">
-      <picture>
-        <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logotext.svg">
-        <img class="main-header__logo main-header__logo--text" src="images/logotext.svg" width="101" height="18" alt="название магазина cat energy.">
-      </picture>
-    </a>
+    <div class="main-header__wrapper">
+      <a class="main-header__link" href="#">
+        <picture>
+          <source media="(min-width: 1300px)" width="70" height="59" type="image/svg+xml" srcset="images/logodesk.svg">
+          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logotab.svg">
+          <img class="main-header__logo main-header__logo--image" src="images/logomob.svg" width="33" height="38" alt="логотип магазина cat energy.">
+        </picture>
+      </a>
+      <a class="main-header__link" href="#">
+        <picture>
+          <source media="(min-width: 1300px)" width="118" height="21" type="image/svg+xml" srcset="images/logotext.svg">
+          <img class="main-header__logo main-header__logo--text" src="images/logotext.svg" width="101" height="18" alt="название магазина cat energy.">
+        </picture>
+      </a>
+    </div>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__home-page" href="#">Главная</a>
+            <a class="main-nav__page" href="#">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__catalog-page" href="catalog.html">
+            <a class="main-nav__page" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__selection-page" href="selection.html">
+            <a class="main-nav__page" href="selection.html">
               Подбор программы
             </a>
           </li>
         </ul>
+        <button class="main-nav__toggle" type="button">
+          <span>Открыть меню</span>
+        </button>
       </div>
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
     </nav>
   </header>
   <main class="main-container">
@@ -69,10 +71,10 @@
           <li class="promo__item">
             <h2 class="promo__item-title">Похудение</h2>
             <p class="promo__item-description">
-              Ваш кот весит больше собаки и
-              почти утратил способность лазить
-              по деревьям? Пора на диету! Cat
-              Energy Slim поможет вашему
+              Ваш кот весит больше собаки и<br>
+              почти утратил способность лазить<br>
+              по деревьям? Пора на диету! Cat<br>
+              Energy Slim поможет вашему<br>
               питомцу сбросить лишний вес.
             </p>
             <a class="promo__catalog-slim" href="#">Каталог slim</a>
@@ -96,29 +98,31 @@
         <h2 class="work__title">Как это работает</h2>
         <ul class="work__list">
           <li class="work__item work__item--leaf">
-            <p class="work__description">Функциональное питание
-              содержит только полезные
+            <p class="work__description">
+              Функциональное питание<br>
+              содержит только полезные<br>
               питательные вещества.
             </p>
           </li>
           <li class="work__item work__item--glass">
             <p class="work__description">
-              Выпускается в виде порошка,
-              который нужно лишь залить
+              Выпускается в виде порошка,<br>
+              который нужно лишь залить<br>
               кипятком и готово.
             </p>
           </li>
           <li class="work__item work__item--eat">
             <p class="work__description">
-              Замените один-два приема
-              обычной еды на наше
+              Замените один-два приема<br>
+              обычной еды на наше<br>
               функциональное питание.
             </p>
           </li>
           <li class="work__item work__item--watch">
             <p class="work__description">
-              Уже через месяц наслаждайтесь
-              изменениями к лучшему вашего питомца!
+              Уже через месяц<br>
+              наслаждайтесьизменениями<br>
+              к лучшему вашего питомца!
             </p>
           </li>
         </ul>
@@ -138,7 +142,7 @@
         <dl class="proof__list">
           <div class="proof__estimate">
             <dt class="proof__term">5 кг</dt>
-            <dd class="proof__definition">Снижение веса</dd>
+            <dd class="proof__definition">Снижение<br>веса</dd>
           </div>
         </dl>
         <dl class="proof__list">
@@ -147,8 +151,8 @@
             <dd class="proof__definition">Затрачено времени</dd>
           </div>
         </dl>
-        <p class="proof__cost">Затраты на питание:</p>
-        <p class="proof__price">15 рублей</p>
+        <p class="proof__cost-price">Затраты на питание: 15 рублей</p>
+        <!-- <p class="proof__price">15 рублей</p> -->
         <div class="proof__compare">
           <picture>
             <source media="(min-width: 768px)" width="560" height="512" type="image/jpeg" srcset="images/cat-before@1x.png 1x, images/cat-before@2x.png 2x">
@@ -168,7 +172,9 @@
       <h2 class="visually-hidden">Адрес и карта проезда</h2>
       <div class="contacts__wrapper">
         <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address"></p>
+        <p class="contacts__address">ул. Большая
+          Конюшенная, д. 19/8
+          Санкт-Петербург</p>
       </div>
       <div class="contacts__location">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197904!2d30.320472476885115!3d59.93871916209403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1713806316708!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -186,7 +192,6 @@
         <img class="main-footer__logo main-footer__logo--text" src="images/logotext.svg" width="128" height="24" alt="название магазина cat energy.">
       </a>
       <div class="main-footer__social social">
-        <b class="social__title">Давайте дружить!</b>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>

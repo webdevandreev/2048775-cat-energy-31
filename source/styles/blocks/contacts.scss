@@ -1,3 +1,18 @@
-.contacts {
-  background-color: #7da2a3;
+.contacts__invite {
+  padding-left: 20px;
+  font-family: "Oswald", "Arilal", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $-color-black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  padding-left: 20px;
+  font-family: "Lato", "Arilal", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: $-color-black;
+  text-align: center;
 }

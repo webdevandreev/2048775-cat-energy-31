@@ -1,5 +1,7 @@
 .main-header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  background-color: $-bg-white;
+}
+
+.main-header__wrapper {
+  padding: 14 20 13;
 }
