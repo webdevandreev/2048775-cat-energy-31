@@ -1,3 +1,16 @@
 .social {
-  background-color: #7da2a3;
+  background-color: $-bg-white;
+}
+
+.social__icon {
+  fill: $-color-black;
+}
+
+.social__link:hover .social__icon {
+  fill: $-basic-green;
+}
+
+.social__link:active .social__icon {
+  opacity: 0.2;
+  fill: $-basic-green;
 }
