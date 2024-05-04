@@ -1,3 +1,11 @@
 .catalog {
-  background-color: #f1e1c9;
+  background-color: $-bg-white;
+}
+
+.catalog__title {
+  font-family: "Oswald", "Arilal", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $-color-black;
 }
