@@ -1,3 +1,18 @@
-.product-card {
-  background-color: #7da2a3;
+.product-card__name,
+.product-card__more {
+  font-family: "Oswald", "Arilal", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $-color-black;
+  text-transform: uppercase;
+}
+
+.product-card__properties,
+.product-card__taste {
+  font-family: "Lato", "Arilal", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $-color-black;
 }
