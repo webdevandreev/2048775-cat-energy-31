@@ -14,3 +14,11 @@
   opacity: 0.2;
   fill: $-basic-green;
 }
+
+.social__list {
+  display: flex;
+  width: 132px;
+  height: 22px;
+  margin: 0 auto;
+  justify-content: space-between;
+}

@@ -3,5 +3,25 @@
 }
 
 .main-header__wrapper {
-  padding: 14 20 13;
+  display: flex;
+  padding: 14 20 10;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header__link:hover {
+  opacity: 0.6;
+}
+
+.main-header__link:active {
+  opacity: 0.4;
+}
+
+.main-header__toggle {
+  width: 24px;
+  height: 24px;
+  background-color: $-bg-white;
+  background-image: url("../../icons/stack.svg#gamburger");
+  background-repeat: no-repeat;
+  border: none;
 }

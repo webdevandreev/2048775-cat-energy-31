@@ -26,15 +26,18 @@
       <a class="main-header__link" href="#">
         <picture>
           <source media="(min-width: 1300px)" width="118" height="21" type="image/svg+xml" srcset="images/logotext.svg">
-          <img class="main-header__logo main-header__logo--text" src="images/logotext.svg" width="101" height="18" alt="название магазина cat energy.">
+          <img class="main-header__logo main-header__logo--text" src="images/logotext.svg" width="101" height="20" alt="название магазина cat energy.">
         </picture>
       </a>
+      <button class="main-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </div>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__page" href="#">внес изменения тест</a>
+            <a class="main-nav__page" href="#">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__page" href="catalog.html">
@@ -47,9 +50,6 @@
             </a>
           </li>
         </ul>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
       </div>
     </nav>
   </header>
@@ -58,40 +58,42 @@
     <section class="promo">
       <div class="promo__wrapper">
         <header class="promo__header">
-          <h2 class="promo__title">Функциональное питание для котов</h2>
-          <p class="promo__slogan">Занялся собой? Займись котом!</p>
-          <picture>
-            <source media="(min-width: 1440px)" width="522" height="499" type="image/jpeg" srcset="images/product-promomob@1x.png 1x, images/product-promomob@2x.png 2x">
-            <source media="(min-width: 768px)" width="709" height="609" type="image/jpeg" srcset="images/product-promotab@1x.png 1x, images/product-promotab@2x.png 2x">
-            <img class="promo__image-product" src="images/product-promomob@1x.png" width="280" height="270" srcset="images/product-promomob@2x.png" alt="изображение упаковки продукта.">
-          </picture>
-          <a class="promo__program-selection" href="#">Подобрать программу</a>
+          <div class="promo__wrapper-bg-cat">
+            <h2 class="promo__title">Функциональное питание для котов</h2>
+            <p class="promo__slogan">Занялся собой? Займись котом!</p>
+            <picture>
+              <source media="(min-width: 1440px)" width="522" height="499" type="image/jpeg" srcset="images/product-promomob@1x.png 1x, images/product-promomob@2x.png 2x">
+              <source media="(min-width: 768px)" width="709" height="609" type="image/jpeg" srcset="images/product-promotab@1x.png 1x, images/product-promotab@2x.png 2x">
+              <img class="promo__image-product" src="images/product-promomob@1x.png" width="280" height="270" srcset="images/product-promomob@2x.png" alt="изображение упаковки продукта.">
+            </picture>
+            <a class="promo__program-selection" href="#">Подобрать программу</a>
+          </div>
         </header>
-        <ul class="promo__list">
-          <li class="promo__item">
-            <h2 class="promo__item-title">Похудение</h2>
-            <p class="promo__item-description">
-              Ваш кот весит больше собаки и<br>
-              почти утратил способность лазить<br>
-              по деревьям? Пора на диету! Cat<br>
-              Energy Slim поможет вашему<br>
-              питомцу сбросить лишний вес.
-            </p>
-            <a class="promo__catalog-slim" href="#">Каталог slim</a>
-          </li>
-          <li class="promo__item">
-            <h2 class="promo__item-title">Набор массы</h2>
-            <p class="promo__item-description">
-              Заработать авторитет среди
-              дворовых котов и даже собак?
-              Серия Cat Energy Pro поможет
-              вашему коту нарастить
-              необходимые мышцы!
-            </p>
-            <a class="promo__catalog-pro" href="#">Каталог pro</a>
-          </li>
-        </ul>
       </div>
+      <ul class="promo__list">
+        <li class="promo__item promo__item-slim">
+          <h2 class="promo__item-title">Похудение</h2>
+          <p class="promo__item-description">
+            Ваш кот весит больше собаки и<br>
+            почти утратил способность лазить<br>
+            по деревьям? Пора на диету! Cat<br>
+            Energy Slim поможет вашему<br>
+            питомцу сбросить лишний вес.
+          </p>
+          <a class="promo__catalog-slim" href="#">Каталог slim</a>
+        </li>
+        <li class="promo__item promo__item-pro">
+          <h2 class="promo__item-title">Набор массы</h2>
+          <p class="promo__item-description">
+            Заработать авторитет среди
+            дворовых котов и даже собак?
+            Серия Cat Energy Pro поможет
+            вашему коту нарастить
+            необходимые мышцы!
+          </p>
+          <a class="promo__catalog-pro" href="#">Каталог pro</a>
+        </li>
+      </ul>
     </section>
     <section class="work">
       <div class="work__wrapper">
@@ -176,9 +178,9 @@
           Конюшенная, д. 19/8
           Санкт-Петербург</p>
       </div>
-      <div class="contacts__location">
+      <!-- <div class="contacts__location">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197904!2d30.320472476885115!3d59.93871916209403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1713806316708!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+      </div> -->
       <picture>
         <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpeg" srcset="images/mapdesk@1x.png 1x, images/mapdesk@2x.png 2x">
         <source media="(min-width: 768px)" width="768" height="400" type="image/jpeg" srcset="images/maptablet@1x.png 1x, images/maptablet@2x.png 2x">
