@@ -1,5 +1,18 @@
 .promo__header {
-  background-color: $-bg-green;
+  position: relative;
+  background-image:
+    url("../../images/cat-promomob@1x.png"),
+    linear-gradient(180deg, $-bg-green 302px, transparent 302px);
+  background-repeat: no-repeat;
+  background-size:
+    320px 302px,
+    100% 100%;
+  background-position: center top;
+}
+
+.promo__wrapper-bg-cat {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .promo__title {
@@ -45,6 +58,34 @@
   color: $-color-black;
   text-transform: uppercase;
   text-align: center;
+}
+
+.promo__item {
+  position: relative;
+}
+
+.promo__item-slim::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 53px;
+  top: 0;
+  left: 40px;
+  background-color: $-bg-white;
+  background-image: url("../../icons/stack.svg#cat-slim-component");
+  background-repeat: no-repeat;
+}
+
+.promo__item-pro::before {
+  position: absolute;
+  content: "";
+  width: 67px;
+  height: 55px;
+  top: 0;
+  left: 40px;
+  background-color: $-bg-white;
+  background-image: url("../../icons/stack.svg#cat-pro-component");
+  background-repeat: no-repeat;
 }
 
 .promo__item-description {
