@@ -13,6 +13,7 @@
 .promo__wrapper-bg-cat {
   max-width: 600px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .promo__title {
@@ -50,6 +51,14 @@
   text-align: center;
 }
 
+.promo__program-selection:hover {
+  background-color: $-basic-green-hover;
+}
+
+.promo__program-selection:active  {
+  color: rgba(255, 255, 255, .3)
+}
+
 .promo__item-title {
   font-family: "Oswald", "Arilal", sans-serif;
   font-weight: 400;
@@ -74,6 +83,7 @@
   background-color: $-bg-white;
   background-image: url("../../icons/stack.svg#cat-slim-component");
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .promo__item-pro::before {
@@ -99,10 +109,41 @@
 
 .promo__catalog-slim,
 .promo__catalog-pro {
+  position: relative;
   padding-left: 20px;
   font-family: "Oswald", "Arilal", sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: $-color-black;
   text-transform: uppercase;
+}
+
+.promo__catalog-pro::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: $-basic-green;
+}
+
+.promo__catalog-pro::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 107%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 100px;
+  height: 20px;
+  background-color: red;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.promo__catalog-pro:hover {
+  color: $-color-catalog-gray;
+}
+
+.promo__catalog-pro:hover.promo__catalog-pro::after {
+  transform: translate(20px, -50%);
 }
