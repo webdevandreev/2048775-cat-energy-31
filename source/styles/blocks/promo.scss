@@ -55,8 +55,8 @@
   background-color: $-basic-green-hover;
 }
 
-.promo__program-selection:active  {
-  color: rgba(255, 255, 255, .3)
+.promo__program-selection:active {
+  color: $-color-dark-grey;
 }
 
 .promo__item-title {
@@ -135,7 +135,7 @@
   right: 20px;
   width: 100px;
   height: 20px;
-  background-color: red;
+  background-color: $-bg-green;
   overflow: hidden;
   transition: transform 0.3s ease;
 }
