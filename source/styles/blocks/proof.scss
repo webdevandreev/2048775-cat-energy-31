@@ -40,3 +40,62 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+.proof__compare {
+  position: relative;
+}
+
+.proof__button {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 4px;
+  height: 100%;
+  padding: 0;
+  border-radius: 2px;
+  border: none;
+  background-color: #666666;
+  cursor: pointer;
+}
+
+.proof__button::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.proof__button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 18px;
+  top: 50%;
+  left: 50%;
+  background-color: #666666;
+  mask-image: url("../../icons/stack.svg#sliderarrow");
+  mask-position: 50%;
+  mask-size: 24px 18px;
+  mask-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+}
+
+.proof__button:hover {
+  background-color: $-basic-green-hover;
+}
+
+.proof__button:hover.proof__button::before {
+  border: 2px solid $-basic-green-hover;
+}
+
+.proof__button:hover.proof__button::after {
+  background-color: $-basic-green-hover;
+}

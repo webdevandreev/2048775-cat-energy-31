@@ -1,3 +1,25 @@
-.main-footer {
-  text-align: center;
+.main-footer__copyright {
+  position: relative;
+  color: $-color-dark-grey;
+}
+
+.main-footer__copyright::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 27px;
+  height: 34px;
+  padding-right: 20px;
+  background-color: #666666;
+  mask-image: url("../../icons/stack.svg#htmlacademy");
+  mask-size: 27px 34px;
+  mask-repeat: no-repeat;
+}
+
+.main-footer__copyright:hover.main-footer__copyright::after {
+  background-color: $-basic-green-hover;
+}
+
+.main-footer__copyright:active {
+  opacity: 0.5;
 }
