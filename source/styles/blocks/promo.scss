@@ -121,9 +121,11 @@
 .promo__catalog-pro::before {
   content: "";
   position: absolute;
-  width: 100px;
+  width: 16px;
   height: 20px;
-  background-color: $-basic-green;
+  background-color: $-bg-white;
+  right: -22px;
+  z-index: 1;
 }
 
 .promo__catalog-pro::after {
@@ -133,17 +135,17 @@
   left: 107%;
   transform: translateY(-50%);
   right: 20px;
-  width: 100px;
-  height: 20px;
-  background-color: $-bg-green;
+  width: 32px;
+  height: 12px;
+  background-image: url("../../icons/arrow.svg");
   overflow: hidden;
   transition: transform 0.3s ease;
 }
 
-.promo__catalog-pro:hover {
-  color: $-color-catalog-gray;
+.promo__catalog-pro:hover.promo__catalog-pro::after {
+  transform: translate(10px, -50%);
 }
 
-.promo__catalog-pro:hover.promo__catalog-pro::after {
-  transform: translate(20px, -50%);
+.promo__catalog-pro:active {
+  opacity: 0.5;
 }
