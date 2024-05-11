@@ -1,15 +1,25 @@
+.main-footer__link {
+  display: flex;
+  width: 128px;
+  margin: 20px auto;
+}
+
 .main-footer__copyright {
+  display: flex;
   position: relative;
+  width: 280px;
+  min-height: 34px;
+  padding: 7px;
   color: $-color-dark-grey;
 }
 
 .main-footer__copyright::after {
   content: "";
-  display: block;
   position: absolute;
   width: 27px;
   height: 34px;
-  padding-right: 20px;
+  right: 0;
+  top: 0;
   background-color: #666666;
   mask-image: url("../../icons/stack.svg#htmlacademy");
   mask-size: 27px 34px;

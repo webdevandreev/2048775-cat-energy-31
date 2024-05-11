@@ -1,13 +1,21 @@
-//BACKGROUND-COLOR
+//РАЗБЕРИСЬ С ЦВЕТАМИ!!!
 
+//BACKGROUND-COLOR
 $-bg-white: #ffffff;
 $-bg-green: rgba(104, 183, 56, 0.85);
 $-basic-green: #68b738;
 $-basic-green-hover: #5eaa2f;
 $-basic-red: #ff1831;
+$-basic-grey: #f2f2f2;
+
 
 // COLOR
 $-color-white: #ffffff;
 $-color-black: #000000;
 $-color-dark-grey: #444444;
 $-color-catalog-gray: #000000;
+
+// VIEWPORTS
+$-tablet-width: 768px;
+$-desktop-width: 1440px;
+$mobile-width-only: 767px;

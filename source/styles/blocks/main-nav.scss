@@ -2,13 +2,37 @@
   background-color: $-bg-white;
 }
 
+@media (min-width: $-tablet-width) {
+  .main-nav {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .main-nav__wrapper {
   padding-left: 20px;
   text-align: center;
+}
+
+@media (min-width: $-tablet-width) {
+  .main-nav__list {
+    display: flex;
+    width: 436px;
+    min-height: 36px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 12px;
+  }
 }
 
 .main-nav__page {
   font-family: "Oswald", "Arial", sans-serif;
   color: $-color-black;
   text-transform: uppercase;
+}
+
+@media (min-width: $-tablet-width) {
+  .main-nav__page {
+    padding: 6px 16px;
+  }
 }
