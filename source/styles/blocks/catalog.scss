@@ -9,3 +9,19 @@
   line-height: 36px;
   color: $-color-black;
 }
+
+@media (min-width: $-tablet-width) {
+  .catalog__list {
+    display: grid;
+    width: 708px;
+    gap: 20px;
+    grid-template-columns: repeat(2, 324px);
+  }
+}
+
+@media (min-width: $-tablet-width) {
+  .catalog__item {
+    width: 708px;
+    min-height: 511px;
+  }
+}
