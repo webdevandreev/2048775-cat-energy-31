@@ -1,3 +1,9 @@
+.work {
+  width: 280px;
+  min-height: 380px;
+  margin: 0 auto;
+}
+
 .work__title {
   padding-left: 20px;
   font-family: "Oswald", "Arilal", sans-serif;
@@ -7,10 +13,67 @@
   color: $-color-black;
 }
 
+.work__list {
+  padding: 0;
+}
+
 .work__description {
   padding-left: 20px;
+  margin-left: 50px;
   font-family: "Lato", "Arilal", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: $-color-black;
+}
+
+.work__item {
+  position: relative;
+}
+
+.work__item--leaf::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 0;
+  top: 0;
+  background-image: url("../../icons/group-leaf.svg");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+}
+
+.work__item--prowder::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 0;
+  top: 0;
+  background-image: url("../../icons/group-prowder.svg");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+}
+
+.work__item--eat::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 0;
+  top: 0;
+  background-image: url("../../icons/group-eat.svg");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+}
+
+.work__item--watch::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 0;
+  top: 0;
+  background-image: url("../../icons/group-watch.svg");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
 }
