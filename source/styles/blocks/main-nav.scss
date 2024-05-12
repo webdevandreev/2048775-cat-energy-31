@@ -14,6 +14,11 @@
   text-align: center;
 }
 
+.main-nav__list {
+  display: none;
+  padding: 0;
+}
+
 @media (min-width: $-tablet-width) {
   .main-nav__list {
     display: flex;
