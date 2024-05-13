@@ -9,6 +9,13 @@
   }
 }
 
+@media (min-width: $-desktop-width) {
+  .main-nav {
+    background-color: transparent;
+    z-index: 3;
+  }
+}
+
 .main-nav__wrapper {
   padding-left: 20px;
   text-align: center;
