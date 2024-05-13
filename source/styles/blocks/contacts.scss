@@ -1,4 +1,11 @@
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .contacts__invite {
+  width: 140px;
+  height: 60px;
   padding-left: 20px;
   font-family: "Oswald", "Arilal", sans-serif;
   font-size: 16px;
@@ -9,10 +16,31 @@
 }
 
 .contacts__address {
+  width: 140px;
+  height: 60px;
   padding-left: 20px;
   font-family: "Lato", "Arilal", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: $-color-black;
   text-align: center;
+}
+
+.contacts__map {
+  width: 100%;
+  height: 362px;
+}
+
+@media (min-width: $-tablet-width) {
+  .contacts__map {
+    width: 768px;
+    height: 400px;
+  }
+}
+
+@media (min-width: $-desktop-width) {
+  .contacts__map {
+    width: 1440px;
+    height: 400px;
+  }
 }
