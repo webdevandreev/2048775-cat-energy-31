@@ -1,12 +1,8 @@
 .promo__header {
   position: relative;
-  background-image:
-    url("../../images/cat-promomob@1x.png"),
-    linear-gradient(180deg, $-special-bg-green 302px, transparent 302px);
+  background-image: url("../../images/cat-promomob@1x.png"), linear-gradient(to right, #63a73c 50%, #62a53a 50%);
   background-repeat: no-repeat;
-  background-size:
-    320px 302px,
-    100% 100%;
+  background-size: 320px 302px, 100% 61.4%;
   background-position: center top;
 }
 
