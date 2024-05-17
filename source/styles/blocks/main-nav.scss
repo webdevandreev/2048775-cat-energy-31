@@ -34,6 +34,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     padding-left: 12px;
+    list-style: none;
   }
 }
 
@@ -46,5 +47,6 @@
 @media (min-width: $-tablet-width) {
   .main-nav__page {
     padding: 6px 16px;
+    color: $-color-white;
   }
 }
