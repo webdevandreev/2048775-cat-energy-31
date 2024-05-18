@@ -1,3 +1,8 @@
+.promo__wrapper {
+  width: 709px;
+  margin: 0 auto;
+}
+
 .promo__header {
   position: relative;
   background-image: url("../../images/cat-promomob@1x.png"), linear-gradient(to right, #63a73c 50%, #62a53a 50%);
@@ -145,6 +150,9 @@
 @media (min-width: $-desktop-width) {
   .promo__list {
     display: flex;
+    width: 1220px;
+    margin: 0 auto;
+    justify-content: space-between;
   }
 }
 
@@ -174,12 +182,16 @@
   min-height: 266px;
   margin: 0 auto 20px;
   background-color: $-basic-grey;
-}
 
-@media (min-width: $-tablet-width) {
-  .promo__item {
+  @media (min-width: $-tablet-width) {
     width: 708px;
     min-height: 372px;
+  }
+
+  @media (min-width: $-desktop-width) {
+    width: 570px;
+    min-height: 374px;
+    margin: 0;
   }
 }
 
