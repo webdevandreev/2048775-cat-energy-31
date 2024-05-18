@@ -1,6 +1,11 @@
 .proof {
   width: 100%;
+  min-height: 659px;
   background-color: $-basic-grey;
+
+  @media (min-width: $-tablet-width) {
+    min-height: 1081px;
+  }
 }
 
 .proof__wrapper {
