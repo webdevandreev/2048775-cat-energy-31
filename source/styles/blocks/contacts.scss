@@ -1,6 +1,20 @@
+.contacts {
+  @media (min-width: $-tablet-width) {
+    width: 768px;
+    min-height: 600px;
+    margin: 0 auto;
+  }
+}
+
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $-tablet-width) {
+    width: 768px;
+    min-height: 200px;
+    align-items: center;
+  }
 }
 
 .contacts__invite {
