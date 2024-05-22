@@ -53,25 +53,23 @@
         </ul>
       </div>
     </nav>
+    <section class="description">
+      <div class="description__wrapper">
+        <h2 class="description__title">Функциональное питание для котов</h2>
+        <p class="description__slogan">Занялся собой? Займись котом!</p>
+        <a class="description__program-selection" href="#">Подобрать программу</a>
+        <picture>
+          <source media="(min-width: 1440px)" width="522" height="499" type="image/jpeg" srcset="images/product-promomob@1x.png 1x, images/product-promomob@2x.png 2x">
+          <source media="(min-width: 768px)" width="709" height="609" type="image/jpeg" srcset="images/product-promotab@1x.png 1x, images/product-promotab@2x.png 2x">
+          <img class="description__image-product" src="images/product-promomob@1x.png" width="280" height="270" srcset="images/product-promomob@2x.png" alt="изображение упаковки продукта.">
+        </picture>
+      </div>
+    </section>
   </header>
 
   <main class="main-container">
-    <h1 class="visually-hidden">Магазин функционального питания для котов</h1>
     <section class="promo">
-      <div class="promo__wrapper">
-        <header class="promo__header">
-          <div class="promo__wrapper-bg-cat">
-            <h2 class="promo__title">Функциональное<br>питание для котов</h2>
-            <p class="promo__slogan">Занялся собой? Займись котом!</p>
-            <a class="promo__program-selection" href="#">Подобрать программу</a>
-            <picture>
-              <source media="(min-width: 1440px)" width="522" height="499" type="image/jpeg" srcset="images/product-promomob@1x.png 1x, images/product-promomob@2x.png 2x">
-              <source media="(min-width: 768px)" width="709" height="609" type="image/jpeg" srcset="images/product-promotab@1x.png 1x, images/product-promotab@2x.png 2x">
-              <img class="promo__image-product" src="images/product-promomob@1x.png" width="280" height="270" srcset="images/product-promomob@2x.png" alt="изображение упаковки продукта.">
-            </picture>
-          </div>
-        </header>
-      </div>
+      <h1 class="visually-hidden">Магазин функционального питания для котов</h1>
       <ul class="promo__list">
         <li class="promo__item promo__item-slim">
           <h2 class="promo__item-title">Похудение</h2>
@@ -144,34 +142,35 @@
           и по-прежнему спит по 16 часов в день.
         </p>
         <div class="proof__estimate">
-          <dl class="proof__list">
-            <dt class="proof__term">5 кг</dt>
-            <dd class="proof__definition">Снижение<br>веса</dd>
-          </dl>
-          <dl class="proof__list">
-            <dt class="proof__term">60 дней</dt>
-            <dd class="proof__definition">Затрачено времени</dd>
-          </dl>
+          <div class="proof__example">
+            <dl class="proof__list">
+              <dt class="proof__term">5 кг</dt>
+              <dd class="proof__definition">Снижение веса</dd>
+            </dl>
+            <dl class="proof__list">
+              <dt class="proof__term">60 дней</dt>
+              <dd class="proof__definition">Затрачено времени</dd>
+            </dl>
+          </div>
           <p class="proof__cost-price">Затраты на питание: 15 рублей</p>
         </div>
-        <!-- <p class="proof__price">15 рублей</p> -->
-        <div class="proof__slider slider">
-          <div class="proof__slider-images slider__images">
-            <div class="slider__image-wrapper slider__image-wrapper--before" style="width: 50%;">
-              <picture>
-                <source media="(min-width: 768px)" width="560" height="512" type="image/jpeg" srcset="images/cat-before@1x.png 1x, images/cat-before@2x.png 2x">
-                <img class="proof__slider-image slider-image" src="images/cat-before@1x.png" width="280" height="256" srcset="images/cat-before@2x.png" alt="изображение кота до похудения">
-              </picture>
-            </div>
+      </div>
+      <div class="proof__slider slider">
+        <div class="proof__slider-images slider__images">
+          <div class="slider__image-wrapper slider__image-wrapper--before" style="width: 50%;">
+            <picture>
+              <source media="(min-width: 768px)" width="560" height="512" type="image/jpeg" srcset="images/cat-before@1x.png 1x, images/cat-before@2x.png 2x">
+              <img class="proof__slider-image slider-image" src="images/cat-before@1x.png" width="280" height="256" srcset="images/cat-before@2x.png" alt="изображение кота до похудения">
+            </picture>
+          </div>
 
-            <button class="proof__button" type="button"><span class="visually-hidden">Передвинуть ползунок</span></button>
+          <button class="proof__button" type="button"><span class="visually-hidden">Передвинуть ползунок</span></button>
 
-            <div class="slider__image-wrapper slider__image-wrapper--after">
-              <picture>
-                <source media="(min-width: 768px)" width="560" height="512" type="image/jpeg" srcset="images/cat-after@1x.png 1x, images/cat-after@2x.png 2x">
-                <img class="proof__slider-image slider-image" src="images/cat-after@1x.png" width="280" height="256" srcset="images/cat-after@2x.png" alt="изображение кота после похудения">
-              </picture>
-            </div>
+          <div class="slider__image-wrapper slider__image-wrapper--after">
+            <picture>
+              <source media="(min-width: 768px)" width="560" height="512" type="image/jpeg" srcset="images/cat-after@1x.png 1x, images/cat-after@2x.png 2x">
+              <img class="proof__slider-image slider-image" src="images/cat-after@1x.png" width="280" height="256" srcset="images/cat-after@2x.png" alt="изображение кота после похудения">
+            </picture>
           </div>
         </div>
       </div>
