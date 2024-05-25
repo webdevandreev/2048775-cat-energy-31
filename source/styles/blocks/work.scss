@@ -23,7 +23,8 @@
 @media (min-width: $-tablet-width) {
   .work__title {
     padding-left: 0;
-    margin-bottom: 85px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
@@ -37,6 +38,7 @@
     display: grid;
     grid-template-columns: 249px 249px;
     gap: 37px 137px;
+    border-bottom: 1px solid #d9d9d9;
   }
 }
 
@@ -57,8 +59,10 @@
 
 @media (min-width: $-tablet-width) {
   .work__description {
-    padding: 31px 0 0;
-    margin-left: 0;
+    width: 245px;
+    height: 72px;
+    margin: auto 0;
+    padding: 0;
   }
 }
 
@@ -68,6 +72,7 @@
 
 @media (min-width: $-tablet-width) {
   .work__item {
+    display: flex;
     width: 230px;
     min-height: 280px;
   }
@@ -92,7 +97,7 @@
     width: 80px;
     height: 80px;
     left: 0;
-    top: -63px;
+    top: 0;
     background-image: url("../../icons/group-leaf.svg");
     background-size: 80px 80px;
     background-repeat: no-repeat;
@@ -118,7 +123,7 @@
     width: 80px;
     height: 80px;
     left: 0;
-    top: -63px;
+    top: 0;
     background-image: url("../../icons/group-prowder.svg");
     background-size: 80px 80px;
     background-repeat: no-repeat;
@@ -144,7 +149,7 @@
     width: 80px;
     height: 80px;
     left: 0;
-    top: -63px;
+    top: 0;
     background-image: url("../../icons/group-eat.svg");
     background-size: 80px 80px;
     background-repeat: no-repeat;
@@ -170,7 +175,7 @@
     width: 80px;
     height: 80px;
     left: 0;
-    top: -63px;
+    top: 0;
     background-image: url("../../icons/group-watch.svg");
     background-size: 80px 80px;
     background-repeat: no-repeat;

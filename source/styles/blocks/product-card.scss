@@ -8,6 +8,20 @@
   text-transform: uppercase;
 }
 
+.product-card__name {
+  width: 76px;
+  min-height: 41px;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.product-card__more {
+  margin: auto;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  text-align: center;
+}
+
 .product-card__properties,
 .product-card__taste {
   font-family: "Lato", "Arilal", sans-serif;
@@ -15,4 +29,34 @@
   font-size: 12px;
   line-height: 16px;
   color: $-color-black;
+}
+
+.product-card__properties {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.product-card__taste {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  text-align: center;
+}
+
+.product-card__property {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card__link {
+  width: 68px;
+  height: 86px;
+  margin: auto;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.product-card__button-order {
+  grid-column: 1/3;
+  grid-row: 3;
+  border: none;
 }

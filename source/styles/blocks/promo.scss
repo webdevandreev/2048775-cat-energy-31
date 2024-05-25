@@ -35,7 +35,7 @@
 
 .promo__item {
   position: relative;
-  width: 288px;
+  width: 280px;
   min-height: 266px;
   margin: 0 auto 20px;
   background-color: $-basic-grey;
@@ -61,8 +61,6 @@
   left: 20px;
   bottom: 22px;
   background-image: url("../../icons/stack.svg#cat-slim-component");
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 @media (min-width: $-tablet-width) {
@@ -70,13 +68,11 @@
     content: "";
     position: absolute;
     width: 200px;
-    height: 200px;
-    top: 24px;
-    right: 20px;
+    height: 211px;
+    top: 75px;
+    right: 85px;
     bottom: 22px;
     background-image: url("../../icons/stack.svg#cat-slim-component");
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 }
 
@@ -101,21 +97,18 @@
   left: 12px;
   bottom: 22px;
   background-image: url("../../icons/stack.svg#cat-pro-component");
-  background-repeat: no-repeat;
 }
 
 @media (min-width: $-tablet-width) {
   .promo__item-pro::after {
     content: "";
     position: absolute;
-    width: 205px;
-    height: 205px;
-    top: 24px;
-    right: 20px;
+    width: 268px;
+    height: 200px;
+    top: 85px;
+    right: 60px;
     bottom: 22px;
     background-image: url("../../icons/stack.svg#cat-pro-component");
-    background-repeat: no-repeat;
-    background-size: 205px 205px;
   }
 }
 
@@ -126,7 +119,7 @@
 }
 
 .promo__item-description {
-  width: 246px;
+  width: 245px;
   min-height: 90px;
   margin-left: 20px;
   font-family: "Lato", "Arilal", sans-serif;
@@ -145,6 +138,38 @@
   line-height: 16px;
   color: $-color-black;
   text-transform: uppercase;
+}
+
+.promo__catalog-slim::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 20px;
+  background-color: $-basic-grey;
+  right: -22px;
+  z-index: 1;
+}
+
+.promo__catalog-slim::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 107%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 32px;
+  height: 12px;
+  background-image: url("../../icons/arrow.svg");
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.promo__catalog-slim:hover.promo__catalog-slim::after {
+  transform: translate(10px, -50%);
+}
+
+.promo__catalog-slim:active {
+  opacity: 0.5;
 }
 
 .promo__catalog-pro::before {

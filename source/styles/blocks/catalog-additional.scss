@@ -7,8 +7,48 @@
 }
 
 .catalog-additional__gift {
+  display: flex;
+  position: relative;
+  width: 181px;
+  min-height: 60px;
+  padding: 10px;
+  margin: 0 auto 33px;
   font-family: "Lato", "Arilal", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  color: $-color-white;
+  text-align: center;
+  justify-content: center;
+  align-items: end;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 78px;
+    height: 80px;
+    background-image: url("../../icons/stack.svg#icon_gift");
+    top: 55px;
+  }
+}
+
+.catalog-additional__wrapper {
+  width: 280px;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+.catalog-additional__list {
+  list-style: none;
+  padding: 0;
+}
+
+.catalog-additional__add {
+  display: flex;
+  width: 280px;
+  min-height: 290px;
+  margin-bottom: 40px;
+  background-image: url("../../images/cat-bg-catalog@1x.png");
+  background-repeat: no-repeat;
+  background-size: 280px 290px;
 }

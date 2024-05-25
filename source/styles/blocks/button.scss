@@ -1,4 +1,6 @@
 .button {
+  width: 280px;
+  height: 40px;
   font-family: "Oswald", "Arilal", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -6,4 +8,5 @@
   color: $-color-white;
   background-color: $-basic-green;
   text-transform: uppercase;
+  border: none;
 }

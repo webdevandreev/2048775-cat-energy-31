@@ -4,11 +4,9 @@
 
 @media (min-width: $-tablet-width) {
   .main-header {
-    display: flex;
-    width: 740px;
+    width: 100%;
     min-height: 100px;
     margin: 0 auto;
-    justify-content: space-between;
   }
 
   @media (min-width: $-desktop-width) {
@@ -19,24 +17,22 @@
       margin: 0 auto;
     }
   }
-
-  .main-header__toggle {
-    display: none;
-  }
 }
 
 .main-header__wrapper {
+  position: relative;
   display: flex;
-  height: 77px;
-  padding: 14 20 10;
-  justify-content: space-between;
+  width: 280px;
+  height: 65px;
+  margin: 0 auto;
   align-items: center;
 }
 
 @media (min-width: $-tablet-width) {
   .main-header__wrapper {
+    display: flex;
+    width: 704px;
     min-height: 100px;
-    justify-content: flex-start;
     padding: 14 16 10;
   }
 
@@ -52,6 +48,10 @@
   }
 }
 
+.main-header__logo {
+  margin-right: 13px;
+}
+
 .main-header__link:hover {
   opacity: 0.6;
 }
@@ -61,8 +61,10 @@
 }
 
 .main-header__toggle {
+  position: absolute;
   width: 24px;
   height: 24px;
+  right: 0;
   background-color: $-bg-white;
   background-image: url("../../icons/stack.svg#gamburger");
   background-repeat: no-repeat;
