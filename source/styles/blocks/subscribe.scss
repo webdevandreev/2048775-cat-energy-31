@@ -1,4 +1,11 @@
+.subscribe__wrapper {
+  width: 280px;
+  min-height: 296px;
+  margin: 0 auto;
+}
+
 .subscribe__title {
+  margin-bottom: 32px;
   font-family: "Oswald", "Arilal", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -6,8 +13,40 @@
 }
 
 .subscribe__description {
+  margin-bottom: 24px;
   font-family: "Oswald", "Arilal", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  text-align: center;
+}
+
+.subscribe__input {
+  width: 280px;
+  height: 56px;
+  margin-bottom: 16px;
+  font-family: "Oswald", "Arilal", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+}
+
+.subscribe__input::placeholder {
+  color: $-color-dark-grey;
+  padding-left: 10px;
+}
+
+.subscribe__button {
+  width: 280px;
+  height: 56px;
+  font-family: "Oswald", "Arilal", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #68b738;
+  border: none;
+  text-transform: uppercase;
 }

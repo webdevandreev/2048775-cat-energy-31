@@ -2,12 +2,25 @@
   background-color: $-bg-white;
 }
 
+.catalog__wrapper {
+  width: 320px;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
 .catalog__title {
   font-family: "Oswald", "Arilal", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   color: $-color-black;
+}
+
+.catalog__list {
+  display: grid;
+  padding: 0;
+  grid-template-columns: 320px;
+  list-style: none;
 }
 
 @media (min-width: $-tablet-width) {
@@ -17,6 +30,14 @@
     gap: 20px;
     grid-template-columns: repeat(2, 324px);
   }
+}
+
+.catalog__item {
+  display: grid;
+  padding: 5px 20px 23px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  list-style: none;
 }
 
 @media (min-width: $-tablet-width) {

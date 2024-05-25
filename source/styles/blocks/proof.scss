@@ -4,7 +4,10 @@
   background-color: $-basic-grey;
 
   @media (min-width: $-tablet-width) {
-    background-color: transparent;
+    min-height: 1081px;
+    background: linear-gradient($-bg-white 462px, #f2f2f2 462px) top no-repeat;
+    background-repeat: no-repeat;
+    background-position: center top;
   }
 }
 
@@ -35,7 +38,8 @@
   color: $-color-black;
 
   @media (min-width: $-tablet-width) {
-    align-items: center;
+    width: 635px;
+    height: 72px;
   }
 }
 
