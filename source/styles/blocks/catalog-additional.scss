@@ -38,16 +38,33 @@
   margin: 0 auto;
 }
 
+@media (min-width: $-tablet-width) {
+  .catalog-additional__wrapper {
+    width: 708px;
+  }
+}
+
 .catalog-additional__list {
   list-style: none;
   padding: 0;
+}
+
+.catalog-additional__item {
+  width: 280px;
+}
+
+@media (min-width: $-tablet-width) {
+  .catalog-additional__item {
+    width: 632px;
+    padding: 26px 38px;
+  }
 }
 
 .catalog-additional__add {
   display: flex;
   width: 280px;
   min-height: 290px;
-  margin-bottom: 40px;
+  margin: auto;
   background-image: url("../../images/cat-bg-catalog@1x.png");
   background-repeat: no-repeat;
   background-size: 280px 290px;

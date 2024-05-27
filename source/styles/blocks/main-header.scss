@@ -4,6 +4,8 @@
 
 @media (min-width: $-tablet-width) {
   .main-header {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     min-height: 100px;
     margin: 0 auto;
@@ -16,6 +18,31 @@
       min-height: 162px;
       margin: 0 auto;
     }
+  }
+}
+
+@media (min-width: $-desktop-width) {
+  .main-header::after {
+    content: "";
+    position: absolute;
+    width: 720px;
+    height: 694px;
+    background-image: url("../../images/cat-greenbgdesk@1x.png");
+    left: 50%;
+    top: 0;
+  }
+}
+
+@media (min-width: $-desktop-width) {
+  .main-header--catalog::after {
+    display: none;
+    content: "";
+    position: absolute;
+    width: 720px;
+    height: 694px;
+    background-image: url("../../images/cat-greenbgdesk@1x.png");
+    left: 50%;
+    top: 0;
   }
 }
 
@@ -33,7 +60,7 @@
     display: flex;
     width: 704px;
     min-height: 100px;
-    padding: 14 16 10;
+    padding: 14 30px 10;
   }
 
   .main-header__toggle {
@@ -43,6 +70,7 @@
 
 @media (min-width: $-desktop-width) {
   .main-header__wrapper {
+    width: 1220px;
     min-height: 162px;
     justify-content: flex-start;
   }

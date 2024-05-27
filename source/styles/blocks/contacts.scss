@@ -1,6 +1,15 @@
+
 .contacts {
+  position: relative;
+
   @media (min-width: $-tablet-width) {
     width: 768px;
+    min-height: 600px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $-desktop-width) {
+    width: 1440px;
     min-height: 600px;
     margin: 0 auto;
   }
@@ -14,12 +23,14 @@
   display: flex;
   width: 280px;
   min-height: 112px;
+  padding: 0;
   margin: 0 auto;
   justify-content: space-between;
 
   @media (min-width: $-tablet-width) {
     width: 768px;
     min-height: 200px;
+    padding: 0 70px;
     align-items: center;
   }
 }

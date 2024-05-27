@@ -20,23 +20,12 @@
 
   @media (min-width: $-desktop-width) {
     display: grid;
-    min-height: 694px;
-    margin-left: 190px;
-    grid-template-columns: 414px 552px;
+    width: 930px;
+    margin-left: 75px;
+    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: repeat(2, 1fr);
     background-color: transparent;
     z-index: 1;
-  }
-}
-
-@media (min-width: $-desktop-width) {
-  .description__wrapper::after {
-    content: "";
-    position: absolute;
-    width: 720px;
-    height: 694px;
-    background-image: url("../../images/cat-greenbgdesk@1x.png");
-    left: 50%;
-    top: 0;
   }
 }
 
@@ -62,6 +51,13 @@
     text-align: start;
     color: $-color-black;
   }
+
+  @media (min-width: $-desktop-width) {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0;
+    align-self: self-end;
+  }
 }
 
 .description__slogan {
@@ -82,6 +78,13 @@
     line-height: 20px;
     color: $-color-black;
     text-transform: uppercase;
+  }
+
+  @media (min-width: $-desktop-width) {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 20px;
+    padding: 10px 10px 10px 0;
   }
 }
 
@@ -105,6 +108,11 @@
     margin: 0;
     z-index: 1;
   }
+
+  @media (min-width: $-desktop-width) {
+    grid-column: 1;
+    grid-row: 3;
+  }
 }
 
 .description__program-selection:hover {
@@ -121,6 +129,10 @@
   }
 }
 
+.description__image-picture {
+  display: contents;
+}
+
 .description__image-product {
   display: block;
   width: 280px;
@@ -131,5 +143,13 @@
     width: 709px;
     height: 609px;
     margin: -70px 0 0 -80px;
+  }
+
+  @media (min-width: $-desktop-width) {
+    grid-column: 2;
+    grid-row: 1/ span 3;
+    width: 552px;
+    height: 499px;
+    margin-top: 30px;
   }
 }
