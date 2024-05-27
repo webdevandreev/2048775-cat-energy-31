@@ -19,3 +19,15 @@
   display: flex;
   justify-content: space-between;
 }
+
+.additional-product-card__button {
+  width: 280px;
+  min-height: 40px;
+}
+
+@media (min-width: $-tablet-width) {
+  .additional-product-card__button {
+    width: 632px;
+    min-height: 40px;
+  }
+}

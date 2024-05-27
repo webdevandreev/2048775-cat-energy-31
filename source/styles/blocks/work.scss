@@ -11,6 +11,13 @@
   }
 }
 
+@media (min-width: $-desktop-width) {
+  .work {
+    width: 1220px;
+    min-height: 400px;
+  }
+}
+
 .work__title {
   padding-left: 20px;
   font-family: "Oswald", "Arilal", sans-serif;
@@ -39,6 +46,15 @@
     grid-template-columns: 249px 249px;
     gap: 37px 137px;
     border-bottom: 1px solid #d9d9d9;
+  }
+}
+
+@media (min-width: $-desktop-width) {
+  .work__list {
+    display: grid;
+    grid-template-columns: 249px 249px;
+    gap: 37px 79px;
+    border-bottom: none;
   }
 }
 

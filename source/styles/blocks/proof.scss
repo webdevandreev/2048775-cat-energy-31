@@ -1,13 +1,10 @@
 .proof {
   width: 100%;
   min-height: 659px;
-  background-color: $-basic-grey;
+  background-color: #eaeaea;
 
   @media (min-width: $-tablet-width) {
-    min-height: 1081px;
-    background: linear-gradient($-bg-white 462px, #f2f2f2 462px) top no-repeat;
-    background-repeat: no-repeat;
-    background-position: center top;
+    background-color: $-bg-white;
   }
 }
 
@@ -38,8 +35,10 @@
   color: $-color-black;
 
   @media (min-width: $-tablet-width) {
-    width: 635px;
-    height: 72px;
+    width: 708px;
+    min-height: 72px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -75,9 +74,13 @@
   color: $-color-black;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
-  background-color: #f2f2f2;
+  background-color: #eaeaea;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $-tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .proof__term {
@@ -88,11 +91,15 @@
   width: 87px;
   padding: 0 5px;
   margin: 9px auto 0;
-  background-color: #f2f2f2;
+  background-color: #eaeaea;
   font-family: "Lato", "Arilal", sans-serif;
   font-size: 12px;
   line-height: 12px;
   text-transform: lowercase;
+
+  @media (min-width: $-tablet-width) {
+    background-color: $-color-white;
+  }
 }
 
 .proof__cost-price {

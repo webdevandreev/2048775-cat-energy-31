@@ -50,6 +50,13 @@
 @media (min-width: $-desktop-width) {
   .main-nav__page {
     padding: 6px 16px;
+    color: $-color-white;
+  }
+}
+
+@media (min-width: $-desktop-width) {
+  .main-nav__page--catalog {
+    padding: 6px 16px;
     color: $-color-black;
   }
 }
