@@ -1,3 +1,4 @@
+
 .additional-product-card__name {
   font-family: "Oswald", "Arilal", sans-serif;
   font-weight: 400;
@@ -5,6 +6,10 @@
   line-height: 16px;
   color: $-color-black;
   text-transform: uppercase;
+
+  @media (min-width: $-desktop-width) {
+    width: 128px;
+  }
 }
 
 .additional-product-card__properties {
@@ -13,6 +18,10 @@
   font-size: 14px;
   line-height: 14px;
   color: $-color-dark-grey;
+
+  @media (min-width: $-desktop-width) {
+    width: 285px;
+  }
 }
 
 .additional-product-card__property {
@@ -29,5 +38,12 @@
   .additional-product-card__button {
     width: 632px;
     min-height: 40px;
+  }
+
+  @media (min-width: $-desktop-width) {
+    .additional-product-card__button {
+      width: 244px;
+      min-height: 40px;
+    }
   }
 }

@@ -1,14 +1,19 @@
 .proof {
   width: 100%;
-  min-height: 659px;
+  min-height: 618px;
   background-color: #eaeaea;
+  border-top: 1px solid #d9d9d9;
 
   @media (min-width: $-tablet-width) {
     background-color: $-bg-white;
   }
+
+  @media (min-width: $-desktop-width) {
+    border: none;
+  }
 }
 
-.proof__wrapper {
+.proof__live-example {
   display: flex;
   flex-direction: column;
   width: 280px;
@@ -16,6 +21,13 @@
 
   @media (min-width: $-tablet-width) {
     width: 708px;
+    margin-bottom: 99px;
+  }
+
+  @media (min-width: $-desktop-width) {
+    width: 436px;
+    display: grid;
+    margin-bottom: 0;
   }
 }
 
@@ -26,6 +38,18 @@
   font-size: 36px;
   line-height: 40px;
   color: $-color-black;
+
+  @media (min-width: $-tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $-desktop-width) {
+    padding: 0;
+    margin: 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .proof__description {
@@ -40,6 +64,15 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media (min-width: $-desktop-width) {
+    width: 433px;
+    min-height: 72px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    align-self: center;
+  }
 }
 
 .proof__estimate {
@@ -47,8 +80,15 @@
   flex-direction: column;
 
   @media (min-width: $-tablet-width) {
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+
+  @media (min-width: $-desktop-width) {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
   }
 }
 
@@ -80,11 +120,18 @@
 
   @media (min-width: $-tablet-width) {
     background-color: transparent;
+    width: 162px;
+    height: 77px;
   }
 }
 
 .proof__term {
   padding-top: 13px;
+
+  @media (min-width: $-tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .proof__definition {
@@ -98,7 +145,21 @@
   text-transform: lowercase;
 
   @media (min-width: $-tablet-width) {
+    width: max-content;
+    height: 14px;
+    padding: 0 5px;
+    margin: 15px auto 0;
+    font-size: 14px;
+    line-height: 14px;
     background-color: $-color-white;
+  }
+
+  @media (min-width: $-desktop-width) {
+    width: max-content;
+    height: 14px;
+    padding: 0 5px;
+    margin: 19px auto 0;
+    background-color: #eaeaea;
   }
 }
 
@@ -109,6 +170,20 @@
   color: $-color-black;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $-tablet-width) {
+    width: 172px;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: end;
+  }
+
+  @media (min-width: $-desktop-width) {
+    width: 262px;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: start;
+  }
 }
 
 .proof__button {

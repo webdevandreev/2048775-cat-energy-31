@@ -26,6 +26,10 @@
   margin: 0 auto;
   padding-top: 24px;
   color: $-color-dark-grey;
+
+  @media (min-width: $-tablet-width) {
+    width: 155px;
+  }
 }
 
 .main-footer__copyright::after {
@@ -39,6 +43,10 @@
   mask-image: url("../../icons/stack.svg#htmlacademy");
   mask-size: 27px 34px;
   mask-repeat: no-repeat;
+
+  @media (min-width: $-tablet-width) {
+    right: -3px;
+  }
 }
 
 .main-footer__copyright:hover.main-footer__copyright::after {

@@ -10,7 +10,7 @@
 
   @media (min-width: $-desktop-width) {
     width: 1440px;
-    min-height: 600px;
+    min-height: 400px;
     margin: 0 auto;
   }
 }
@@ -33,11 +33,28 @@
     padding: 0 70px;
     align-items: center;
   }
+
+  @media (min-width: $-desktop-width) {
+    position: absolute;
+    width: 565px;
+    min-height: 200px;
+    padding: 0;
+    top: 95px;
+    left: 110px;
+    background-color: $-bg-white;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
 
 .contacts__wrapper-catalog {
   background-color: #f2f2f2;
+
+  @media (min-width: $-desktop-width) {
+    background-color: $-bg-white;
+  }
 }
+
 
 .contacts__invite {
   width: 140px;
