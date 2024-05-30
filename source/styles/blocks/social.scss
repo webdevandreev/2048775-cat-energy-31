@@ -22,12 +22,16 @@
   list-style: none;
 }
 
+.social__link {
+  color: #666666;
+}
+
 .social__icon {
-  fill: $-color-black;
+  fill: currentColor;
 }
 
 .social__link:hover .social__icon {
-  fill: $-basic-green;
+  color: $-basic-green;
 }
 
 .social__link:active .social__icon {
