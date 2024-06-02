@@ -2,6 +2,10 @@
   background-color: $-bg-white;
 }
 
+.main-header__main-nav {
+  display: none;
+}
+
 @media (min-width: $-tablet-width) {
   .main-header {
     display: flex;
@@ -10,16 +14,17 @@
     min-height: 100px;
     margin: 0 auto;
   }
+}
 
-  @media (min-width: $-desktop-width) {
-    .main-header {
-      display: flex;
-      width: 1252px;
-      min-height: 162px;
-      margin: 0 auto;
-    }
+@media (min-width: $-desktop-width) {
+  .main-header {
+    display: flex;
+    width: 1252px;
+    min-height: 162px;
+    margin: 0 auto;
   }
 }
+
 
 @media (min-width: $-desktop-width) {
   .main-header::after {
@@ -48,19 +53,21 @@
 
 .main-header__wrapper {
   position: relative;
-  display: flex;
-  width: 280px;
+  display: block;
+  width: 100%;
   height: 65px;
   margin: 0 auto;
-  align-items: center;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 @media (min-width: $-tablet-width) {
   .main-header__wrapper {
     display: flex;
-    width: 704px;
+    width: 708px;
     min-height: 100px;
-    padding: 14 30px 10;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
   }
 
   .main-header__toggle {
@@ -72,12 +79,22 @@
   .main-header__wrapper {
     width: 1220px;
     min-height: 162px;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
 }
 
-.main-header__logo {
-  margin-right: 13px;
+.main-header__picture {
+  display: flex;
+  width: 190px;
+  height: 67px;
+  margin-left: 20px;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $-tablet-width) {
+    width: 174px;
+    margin: 0;
+  }
 }
 
 .main-header__link:hover {
@@ -88,13 +105,13 @@
   opacity: 0.4;
 }
 
-.main-header__toggle {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  right: 0;
-  background-color: $-bg-white;
-  background-image: url("../../icons/stack.svg#gamburger");
-  background-repeat: no-repeat;
-  border: none;
-}
+//.main-header__toggle {
+//  position: absolute;
+//  width: 24px;
+//  height: 24px;
+//  right: 0;
+//  background-color: $-bg-white;
+//  background-image: url("../../icons/stack.svg#gamburger");
+//  background-repeat: no-repeat;
+//  border: none;
+//}

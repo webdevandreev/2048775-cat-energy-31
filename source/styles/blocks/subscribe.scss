@@ -98,6 +98,18 @@
   padding-left: 10px;
 }
 
+.subscribe__input:required {
+  background-color: $-bg-white;
+  border: none;
+  outline: 1px solid #cdcdcd;
+}
+
+.subscribe__input:focus.subscribe__input:invalid {
+  background-color: $-bg-white;
+  border: none;
+  outline: 2px solid #ff8282;
+}
+
 .subscribe__button {
   width: 280px;
   height: 56px;
