@@ -17,22 +17,24 @@
 
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__link" href="#">
-        <picture>
-          <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logodesk.svg">
-          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logotab.svg">
-          <img class="main-header__logo main-header__logo--image" src="images/logomob.svg" width="33" height="38" alt="логотип магазина cat energy.">
-        </picture>
-      </a>
-      <a class="main-header__link" href="#">
-        <picture>
-          <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logotext.svg">
-          <img class="main-header__logo main-header__logo--text" src="images/logotext.svg" width="101" height="20" alt="название магазина cat energy.">
-        </picture>
-      </a>
-      <button class="main-header__toggle" type="button">
+      <div class="main-header__picture">
+        <a class="main-header__link" href="#">
+          <picture>
+            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logodesk.svg">
+            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logotab.svg">
+            <img class="main-header__logo main-header__logo--image" src="images/logomob.svg" width="33" height="38" alt="логотип магазина cat energy.">
+          </picture>
+        </a>
+        <a class="main-header__link" href="#">
+          <picture>
+            <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logotext.svg">
+            <img class="main-header__logo main-header__logo--text" src="images/logotext.svg" width="101" height="20" alt="название магазина cat energy.">
+          </picture>
+        </a>
+      </div>
+      <!-- <button class="main-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
-      </button>
+      </button> -->
       <nav class="main-header__main-nav main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -61,7 +63,7 @@
         <picture class="description__image-picture">
           <source media="(min-width: 1440px)" width="522" height="499" type="image/jpeg" srcset="images/product-promomob@1x.png 1x, images/product-promomob@2x.png 2x">
           <source media="(min-width: 768px)" width="709" height="609" type="image/jpeg" srcset="images/product-promotab@1x.png 1x, images/product-promotab@2x.png 2x">
-          <img class="description__image-product" src="images/product-promomob@1x.png" width="280" height="270" srcset="images/product-promomob@2x.png" alt="изображение упаковки продукта.">
+          <img class="description__image-product" src="images/index-can-mobile@1x.png" width="280" height="270" srcset="images/index-can-mobile@2x.png 2x" alt="изображение упаковки продукта.">
         </picture>
       </div>
     </section>
@@ -71,7 +73,7 @@
     <section class="promo">
       <h1 class="visually-hidden">Магазин функционального питания для котов</h1>
       <ul class="promo__list">
-        <li class="promo__item promo__item-slim">
+        <li class="promo__item promo__item--slim">
           <h2 class="promo__item-title">Похудение</h2>
           <p class="promo__item-description">
             Ваш кот весит больше собаки и
@@ -82,13 +84,13 @@
           </p>
           <a class="promo__catalog-slim" href="#">Каталог slim</a>
         </li>
-        <li class="promo__item promo__item-pro">
+        <li class="promo__item promo__item--pro">
           <h2 class="promo__item-title">Набор массы</h2>
           <p class="promo__item-description">
             Заработать авторитет среди
-            дворовых котов и даже собак?<br>
+            дворовых котов и даже собак?
             Серия Cat Energy Pro поможет
-            вашему коту нарастить<br>
+            вашему коту нарастить
             необходимые мышцы!
           </p>
           <a class="promo__catalog-pro" href="#">Каталог pro</a>

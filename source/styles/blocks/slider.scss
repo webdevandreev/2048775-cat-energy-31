@@ -11,6 +11,14 @@
     min-height: 512px;
     background: linear-gradient(#ffffff 149px, #eaeaea 149px);
   }
+
+  @media (min-width: $-desktop-width) {
+    .slider {
+      width: 100%;
+      min-height: 512px;
+      background: linear-gradient(#ffffff 149px, #f2f2f2 149px);
+    }
+  }
 }
 
 .slider__images {
@@ -46,6 +54,13 @@
     z-index: 3;
     background: linear-gradient(to bottom, $-color-white 149px, #eaeaea 149px);
   }
+
+  @media (min-width: $-desktop-width) {
+    .slider__image-wrapper--before {
+      z-index: 3;
+      background: linear-gradient(to bottom, $-color-white 149px, #f2f2f2 149px);
+    }
+  }
 }
 
 .slider__image-wrapper--after {
@@ -55,6 +70,12 @@
 @media (min-width: $-tablet-width) {
   .slider__image-wrapper--after {
     background: linear-gradient(to bottom, $-color-white 149px, #eaeaea 149px);
+  }
+
+  @media (min-width: $-desktop-width) {
+    .slider__image-wrapper--after {
+      background: linear-gradient(to bottom, $-color-white 149px, #f2f2f2 149px);
+    }
   }
 }
 

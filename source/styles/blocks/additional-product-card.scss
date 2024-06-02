@@ -32,18 +32,21 @@
 .additional-product-card__button {
   width: 280px;
   min-height: 40px;
+  margin-bottom: 19px;
 }
 
 @media (min-width: $-tablet-width) {
   .additional-product-card__button {
     width: 632px;
     min-height: 40px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $-desktop-width) {
     .additional-product-card__button {
       width: 244px;
       min-height: 40px;
+      margin-bottom: 0;
     }
   }
 }
