@@ -2,53 +2,47 @@
   background-color: $-bg-white;
 }
 
-.main-header__main-nav {
-  display: none;
-}
-
 @media (min-width: $-tablet-width) {
   .main-header {
     display: flex;
     flex-direction: column;
     width: 100%;
     min-height: 100px;
-    margin: 0 auto;
   }
 }
 
 @media (min-width: $-desktop-width) {
   .main-header {
-    display: flex;
-    width: 1252px;
-    min-height: 162px;
-    margin: 0 auto;
+    min-height: 696px;
+    margin-bottom: 80px;
   }
 }
 
-
-@media (min-width: $-desktop-width) {
-  .main-header::after {
-    content: "";
-    position: absolute;
-    width: 720px;
-    height: 694px;
-    background-image: url("../../images/cat-greenbgdesk@1x.png");
-    left: 50%;
-    top: 0;
+@media (min-width: $-tablet-width) {
+  .main-header--catalog {
+    min-height: 0;
+    margin-bottom: 8px;
   }
 }
 
 @media (min-width: $-desktop-width) {
-  .main-header--catalog::after {
-    display: none;
-    content: "";
-    position: absolute;
-    width: 720px;
-    height: 694px;
-    background-image: url("../../images/cat-greenbgdesk@1x.png");
-    left: 50%;
-    top: 0;
+  .main-header--catalog {
+    min-height: 0;
+    margin-bottom: 16px;
   }
+}
+
+@media (min-width: $-desktop-width) {
+  .main-header--index {
+    background-image: url("../../images/cat-full-green@2x.png"), linear-gradient(90deg, #ffffff 50%, #64a83b 50%);
+    background-size: 1041px 695px, 100%;
+    background-position: calc(50% + 520px) center, center;
+    background-repeat: no-repeat;
+  }
+}
+
+.main-header__main-nav {
+  display: none;
 }
 
 .main-header__wrapper {
@@ -63,8 +57,8 @@
 @media (min-width: $-tablet-width) {
   .main-header__wrapper {
     display: flex;
-    width: 708px;
-    margin-bottom: 37px;
+    width: 700px;
+    margin-bottom: 33px;
     min-height: 100px;
     align-items: center;
     justify-content: space-between;
@@ -79,22 +73,34 @@
 @media (min-width: $-desktop-width) {
   .main-header__wrapper {
     width: 1220px;
-    min-height: 162px;
+    min-height: 60px;
+    margin-top: 55px;
+    margin-bottom: 43px;
     justify-content: space-between;
   }
 }
 
 .main-header__picture {
   display: flex;
-  width: 190px;
+  width: 280px;
   height: 67px;
-  margin-left: 20px;
+  margin: 0 auto;
+  padding: 5px 90px 0 0;
   justify-content: space-between;
   align-items: center;
 
   @media (min-width: $-tablet-width) {
-    width: 174px;
-    margin: 0;
+    width: 190px;
+    height: 67px;
+    margin-right: 94px;
+    margin-left: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: $-desktop-width) {
+  .main-header__logo--text {
+    margin-left: 14px;
   }
 }
 

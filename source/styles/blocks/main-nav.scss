@@ -61,6 +61,12 @@
   }
 }
 
+.main-nav__item--current {
+  text-decoration: underline solid $-basic-green;
+  text-underline-offset: 14px;
+  text-decoration-thickness: 2px;
+}
+
 .main-nav__page {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;

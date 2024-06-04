@@ -5,10 +5,18 @@
 .main-footer__wrapper {
   @media (min-width: $-tablet-width) {
     display: flex;
-    width: 100%;
+    width: 708px;
     min-height: 147px;
     margin: 0 auto;
     align-items: center;
+  }
+
+  @media (min-width: $-desktop-width) {
+    width: 1220px;
+    min-height: 169px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -16,6 +24,10 @@
   display: flex;
   width: 128px;
   margin: 20px auto;
+
+  @media (min-width: $-tablet-width) {
+    margin: 0;
+  }
 }
 
 .main-footer__copyright {
@@ -29,6 +41,7 @@
 
   @media (min-width: $-tablet-width) {
     width: 155px;
+    margin: 25px 7px 0 0;
   }
 }
 
@@ -37,7 +50,7 @@
   position: absolute;
   width: 27px;
   height: 34px;
-  top: 20px;
+  top: 15px;
   right: 0;
   background-color: #666666;
   mask-image: url("../../icons/stack.svg#htmlacademy");
@@ -45,7 +58,8 @@
   mask-repeat: no-repeat;
 
   @media (min-width: $-tablet-width) {
-    right: -3px;
+    top: 18px;
+    right: -8px;
   }
 }
 

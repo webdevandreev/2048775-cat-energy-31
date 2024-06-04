@@ -1,7 +1,7 @@
 .catalog-additional__title {
   position: relative;
   width: max-content;
-  padding: 0 20px;
+  padding: 5px 40px 15px 20px;
   background-color: #ffffff;
   color: $-color-black;
   font-family: "Oswald", "Arilal", sans-serif;
@@ -14,8 +14,19 @@
 @media (min-width: $-tablet-width) {
   .catalog-additional__title {
     width: max-content;
-    margin: 80px -20px;
-    padding: 0 20px;
+    margin: 75px -15px 80px;
+    padding: 0 35px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+@media (min-width: $-desktop-width) {
+  .catalog-additional__title {
+    margin: 75px 46px;
+    padding: 0 35px;
+    font-size: 40px;
+    line-height: 40px;
   }
 }
 
@@ -35,6 +46,18 @@
   justify-content: center;
   align-items: end;
 
+  @media (min-width: $-tablet-width) {
+    margin-bottom: 61px;
+    margin-right: 115px;
+    text-align: start;
+  }
+
+  @media (min-width: $-desktop-width) {
+    margin-bottom: 32px;
+    margin-right: 27px;
+    text-align: center;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -48,7 +71,7 @@
     &::after {
       content: "";
       top: 55px;
-      left: -180px;
+      left: -333px;
     }
   }
 
@@ -87,7 +110,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 50%;
+    top: 37%;
     transform: translateY(-50%);
     z-index: 1;
     height: 2px;
@@ -95,13 +118,17 @@
   }
 }
 
-@media (min-width: 321px) {
-  .catalog-additional__container {
+.catalog-additional__container {
+  margin-left: 12px;
+
+  @media (min-width: $-tablet-width) {
     margin-left: 50px;
   }
 }
 
+
 .catalog-additional__list {
+  margin-bottom: 34px;
   padding: 0;
   list-style: none;
   border-top: 1px solid #cdcdcd;
@@ -132,6 +159,8 @@
 
 @media (min-width: $-tablet-width) {
   .catalog-additional__item {
+    display: flex;
+    flex-flow: row wrap;
     width: 706px;
     padding: 26px 37px 28px;
     border-bottom: 1px solid #cdcdcd;

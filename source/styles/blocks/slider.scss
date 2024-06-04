@@ -8,7 +8,7 @@
 @media (min-width: $-tablet-width) {
   .slider {
     width: 100%;
-    min-height: 512px;
+    min-height: 611px;
     background: linear-gradient(#ffffff 149px, #eaeaea 149px);
   }
 
@@ -32,7 +32,7 @@
 @media (min-width: $-tablet-width) {
   .slider__images {
     width: 560px;
-    min-height: 512px;
+    height: 512px;
     margin: 0 auto;
     grid-template-columns: 560px;
   }

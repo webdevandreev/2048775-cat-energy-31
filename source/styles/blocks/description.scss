@@ -20,10 +20,8 @@
 
   @media (min-width: $-desktop-width) {
     display: grid;
-    min-width: 930px;
-    margin: 0 0 82px 75px;
-    padding-left: 21px;
-    grid-template-columns: repeat(2, 1fr);
+    min-width: 1086px;
+    grid-template-columns: 40% 43%;
     background-color: transparent;
     z-index: 1;
   }
@@ -42,8 +40,9 @@
 
   @media (min-width: $-tablet-width) {
     width: 436px;
-    padding: 10px;
-    margin-bottom: 40px;
+    padding: 9px;
+    margin-bottom: 30px;
+    margin-left: 69px;
     font-family: "Oswald", "Arilal", sans-serif;
     font-weight: 400;
     font-size: 60px;
@@ -75,7 +74,7 @@
 
   @media (min-width: $-tablet-width) {
     padding: 0;
-    margin: 0 0 50px;
+    margin: 0 0 50px 78px;
     font-family: "Oswald", "Arilal", sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -98,12 +97,12 @@
   display: block;
   width: 280px;
   height: 40px;
-  padding: 13px 44px;
-  margin: 0 auto;
+  padding: 10px 44px;
+  margin: 0 auto 20px;
   background-color: $-basic-green;
   font-family: "Oswald", "Arilal", sans-serif;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 20px;
   color: $-color-white;
   text-transform: uppercase;
   text-align: center;
@@ -112,7 +111,7 @@
   @media (min-width: $-tablet-width) {
     width: 244px;
     height: 54px;
-    margin: 0;
+    margin: 0 0 0 78px;
     padding: 12px 0;
     font-size: 20px;
     line-height: 26px;
@@ -123,6 +122,7 @@
   @media (min-width: $-desktop-width) {
     grid-column: 1;
     grid-row: 3;
+    margin: 0;
   }
 }
 
@@ -148,12 +148,12 @@
   display: block;
   width: 280px;
   height: 270px;
-  margin: 29px auto 0;
+  margin: 29px auto 3px;
 
   @media (min-width: $-tablet-width) {
     width: 709px;
     height: 609px;
-    margin: -70px 0 0 -80px;
+    margin: -83px 0 0 -12px;
   }
 
   @media (min-width: $-desktop-width) {
