@@ -1,14 +1,23 @@
 
 .additional-product-card__name {
+  margin-top: 14px;
   font-family: "Oswald", "Arilal", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 12px;
   color: $-color-black;
   text-transform: uppercase;
 
+  @media (min-width: $-tablet-width) {
+    width: 163px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   @media (min-width: $-desktop-width) {
     width: 128px;
+    margin: auto 0;
   }
 }
 
@@ -19,14 +28,40 @@
   line-height: 14px;
   color: $-color-dark-grey;
 
+  @media (min-width: $-tablet-width) {
+    margin: 0 0 24px auto;
+  }
+
   @media (min-width: $-desktop-width) {
     width: 285px;
+    margin: auto 0;
   }
 }
 
 .additional-product-card__property {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $-tablet-width) {
+    width: 224px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $-desktop-width) {
+    min-width: 285px;
+    margin-left: 75px;
+  }
+}
+
+.additional-product-card__property-name {
+  width: 132px;
+  text-align: end;
+
+  @media (min-width: $-desktop-width) {
+    text-align: start;
+    margin: auto 0;
+  }
 }
 
 .additional-product-card__button {
