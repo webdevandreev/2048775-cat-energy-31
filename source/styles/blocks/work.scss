@@ -39,6 +39,12 @@
   }
 }
 
+@media (min-width: $-desktop-width) {
+  .work__title {
+    margin: 57px 20px 62px 0;
+  }
+}
+
 .work__list {
   display: grid;
   grid-template-columns: 1fr;
@@ -60,7 +66,7 @@
 @media (min-width: $-desktop-width) {
   .work__list {
     display: grid;
-    margin-bottom: 0;
+    margin-bottom: 16px;
     grid-template-columns: 249px 249px;
     gap: 37px 79px;
     border-bottom: none;
