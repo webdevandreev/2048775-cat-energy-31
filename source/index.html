@@ -38,8 +38,8 @@
       <nav class="main-header__main-nav main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__page" href="index.html">Главная</a>
+            <li class="main-nav__item">
+              <a class="main-nav__page main-nav__page--current" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__page" href="catalog.html">
@@ -61,6 +61,9 @@
         <p class="description__slogan">Занялся собой? Займись котом!</p>
         <a class="description__program-selection" href="#">Подобрать программу</a>
         <picture class="description__image-picture">
+          <source media="(min-width: 1440px)" type="image/webp" srcset="images/product-promomob@1x.webp, images/product-promomob@2x.webp 2x">
+          <source media="(min-width: 768px)" type="image/webp" srcset="images/product-promotab@1x.webp, images/product-promotab@2x.webp 2x">
+          <source type="image/webp" srcset="images/index-can-mobile@1x.webp, images/index-can-mobile@2x.webp 2x">
           <source media="(min-width: 1440px)" width="522" height="499" type="image/jpeg" srcset="images/product-promomob@1x.png 1x, images/product-promomob@2x.png 2x">
           <source media="(min-width: 768px)" width="709" height="609" type="image/jpeg" srcset="images/product-promotab@1x.png 1x, images/product-promotab@2x.png 2x">
           <img class="description__image-product" src="images/index-can-mobile@1x.png" width="280" height="270" srcset="images/index-can-mobile@2x.png 2x" alt="изображение упаковки продукта.">

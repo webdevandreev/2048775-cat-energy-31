@@ -253,7 +253,7 @@
   width: 16px;
   height: 20px;
   background-color: $-basic-grey;
-  right: -14px;
+  right: -16px;
   z-index: 1;
 }
 
@@ -271,6 +271,13 @@
   transition: transform 0.3s ease;
 }
 
+@media (min-width: $-desktop-width) {
+  .promo__catalog-slim::after {
+    top: 41%;
+    left: 107%;
+  }
+}
+
 .promo__catalog-slim:hover.promo__catalog-slim::after {
   transform: translate(10px, -50%);
 }
@@ -285,7 +292,7 @@
   width: 16px;
   height: 20px;
   background-color: $-basic-grey;
-  right: -10px;
+  right: -16px;
   z-index: 1;
 }
 
@@ -293,7 +300,7 @@
   content: "";
   position: absolute;
   top: 50%;
-  left: 102%;
+  left: 105%;
   transform: translateY(-50%);
   right: 20px;
   width: 32px;
@@ -301,6 +308,13 @@
   background-image: url("../../icons/arrow.svg");
   overflow: hidden;
   transition: transform 0.3s ease;
+}
+
+@media (min-width: $-desktop-width) {
+  .promo__catalog-pro::after {
+    top: 41%;
+    left: 103%;
+  }
 }
 
 .promo__catalog-pro:hover.promo__catalog-pro::after {
