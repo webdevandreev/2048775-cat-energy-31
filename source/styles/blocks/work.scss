@@ -65,17 +65,11 @@
 
 @media (min-width: $-desktop-width) {
   .work__list {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 16px;
-    grid-template-columns: 249px 249px;
     gap: 37px 79px;
     border-bottom: none;
-  }
-}
-
-@media (min-width: $-desktop-width) {
-  .work__list {
-    display: flex;
   }
 }
 
@@ -91,8 +85,8 @@
 @media (min-width: $-tablet-width) {
   .work__description {
     width: 245px;
-    height: 72px;
-    margin: auto 0;
+    min-height: 72px;
+    margin: 100px 0;
     padding: 7px 0 0;
     font-size: 16px;
     line-height: 24px;
@@ -102,7 +96,7 @@
 
 .work__item {
   width: 280px;
-  height: 60px;
+  min-height: 60px;
   position: relative;
 }
 
@@ -116,7 +110,7 @@
       counter-increment: cards;
       content: counter(cards);
       position: absolute;
-      bottom: 39px;
+      top: -50px;
       right: 10px;
       width: 134px;
       height: 290px;
