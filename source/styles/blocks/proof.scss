@@ -1,0 +1,275 @@
+.proof {
+  width: 100%;
+  min-height: 660px;
+  background-color: #eaeaea;
+
+  @media (min-width: $-tablet-width) {
+    background-color: $-bg-white;
+    min-height: 618px;
+    border-top: 1px solid #d9d9d9;
+  }
+
+  @media (min-width: $-desktop-width) {
+    border: none;
+    background: linear-gradient(#ffffff 149px, #f2f2f2 149px);
+    min-height: 610px;
+  }
+}
+
+.proof__wrapper {
+  @media (min-width: $-desktop-width) {
+    display: flex;
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.proof__live-example {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $-tablet-width) {
+    width: 708px;
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: $-desktop-width) {
+    width: 436px;
+    display: grid;
+    margin-bottom: 0;
+    background: linear-gradient(#ffffff 149px, #f2f2f2 149px);
+  }
+}
+
+.proof__title {
+  margin-top: 25px;
+  margin-bottom: 27px;
+  padding-left: 0;
+  font-family: "Oswald", "Arilal", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $-color-black;
+
+  @media (min-width: $-tablet-width) {
+    margin: 45px 0 44px;
+    padding: 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $-desktop-width) {
+    padding: 12px 0;
+    margin: 0 0 25px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.proof__description {
+  font-family: "Lato", "Arilal", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $-color-black;
+
+  @media (min-width: $-tablet-width) {
+    width: 708px;
+    min-height: 72px;
+    margin-bottom: 56px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $-desktop-width) {
+    width: 433px;
+    min-height: 72px;
+    margin: 84px 0 44px;
+    padding: 25px 0;
+    font-size: 16px;
+    line-height: 24px;
+    align-self: center;
+  }
+}
+
+.proof__estimate {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $-tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $-desktop-width) {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+}
+
+.proof__example {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $-tablet-width) {
+    display: flex;
+    width: 367px;
+    min-height: 77px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $-desktop-width) {
+    display: flex;
+    width: 367px;
+    min-height: 77px;
+    justify-content: space-between;
+    margin-bottom: 34px;
+  }
+}
+
+.proof__list {
+  margin-top: 5px;
+  width: 124px;
+  height: 56px;
+  font-family: "Oswald", "Arilal", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $-color-black;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  background-color: #eaeaea;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $-tablet-width) {
+    width: 162px;
+    height: 72px;
+    margin-top: 0;
+    background-color: transparent;
+  }
+}
+
+.proof__term {
+  padding-top: 13px;
+
+  @media (min-width: $-tablet-width) {
+    padding-top: 14px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.proof__definition {
+  width: 87px;
+  padding: 0 5px;
+  margin: 9px auto 0;
+  background-color: #eaeaea;
+  font-family: "Lato", "Arilal", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+
+  @media (min-width: $-tablet-width) {
+    width: max-content;
+    height: 14px;
+    padding: 0 5px;
+    margin: 12px auto 0;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $-color-white;
+  }
+
+  @media (min-width: $-desktop-width) {
+    width: max-content;
+    height: 14px;
+    padding: 0 5px;
+    margin: 11px auto 0;
+    background-color: #f2f2f2;
+  }
+}
+
+.proof__cost-price {
+  font-family: "Oswald", "Arilal", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: $-color-black;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $-tablet-width) {
+    width: 172px;
+    margin-top: 0;
+    margin-bottom: 26px;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: end;
+  }
+
+  @media (min-width: $-desktop-width) {
+    display: flex;
+    width: 328px;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: start;
+    justify-content: space-between;
+  }
+}
+
+.proof__button {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  padding: 0;
+  border-radius: 2px;
+  border: none;
+  background-color: #666666;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.proof__button::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.proof__button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 18px;
+  top: 50%;
+  left: 50%;
+  background-color: #666666;
+  mask-image: url("../../icons/stack.svg#sliderarrow");
+  mask-position: 50%;
+  mask-size: 24px 18px;
+  mask-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+}
+
+.proof__button:hover {
+  background-color: $-basic-green-hover;
+}
+
+.proof__button:hover.proof__button::before {
+  border: 2px solid $-basic-green-hover;
+}
+
+.proof__button:hover.proof__button::after {
+  background-color: $-basic-green-hover;
+}

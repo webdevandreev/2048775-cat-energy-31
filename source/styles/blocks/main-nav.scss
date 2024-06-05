@@ -1,0 +1,115 @@
+.main-nav {
+  position: absolute;
+  width: 100%;
+  background-color: $-bg-white;
+  z-index: 1;
+  top: 65px;
+}
+
+@media (min-width: $-tablet-width) {
+  .main-nav {
+    position: static;
+    display: flex;
+    width: 436px;
+    align-items: center;
+  }
+}
+
+@media (min-width: $-desktop-width) {
+  .main-nav {
+    width: 475px;
+    background-color: transparent;
+  }
+}
+
+.main-nav__wrapper {
+  padding-left: 0;
+  text-align: center;
+
+  @media (min-width: $-tablet-width) {
+    width: 436px;
+  }
+
+  @media (min-width: $-desktop-width) {
+    width: 475px;
+  }
+}
+
+.main-nav__list {
+  list-style: none;
+  box-shadow: 0 -1px #e6e6e6, 0 0;
+  margin: 0;
+}
+
+@media (min-width: $-tablet-width) {
+  .main-nav__list {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    box-shadow: none;
+  }
+}
+
+.main-nav__item {
+  padding: 22px 22px 21px;
+  border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: $-tablet-width) {
+    border: none;
+    padding: 0;
+  }
+}
+
+.main-nav__page {
+  position: relative;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: $-color-black;
+  text-transform: uppercase;
+}
+
+@media (min-width: $-tablet-width) {
+  .main-nav__page {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $-desktop-width) {
+  .main-nav__page {
+    font-size: 20px;
+    line-height: 20px;
+    color: $-color-white;
+  }
+}
+
+@media (min-width: $-desktop-width) {
+  .main-nav__page-catalog {
+    color: $-color-black;
+  }
+}
+
+@media (min-width: $-tablet-width) {
+  .main-nav__page--current::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    right: 0;
+    bottom: -11px;
+    background-color: $-basic-green;
+  }
+}
+
+@media (min-width: $-tablet-width) {
+  .main-nav__page--current::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    right: 0;
+    bottom: -11px;
+    background-color: $-basic-green;
+  }
+}

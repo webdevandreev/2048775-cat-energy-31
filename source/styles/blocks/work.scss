@@ -1,0 +1,235 @@
+.work {
+  width: 280px;
+  min-height: 380px;
+  margin: 0 auto 49px;
+}
+
+@media (min-width: $-tablet-width) {
+  .work {
+    width: 708px;
+    min-height: 644px;
+    margin-bottom: 6px;
+  }
+}
+
+@media (min-width: $-desktop-width) {
+  .work {
+    width: 1220px;
+    min-height: 400px;
+    margin: 0 auto;
+  }
+}
+
+.work__title {
+  margin-top: 20px;
+  font-family: "Oswald", "Arilal", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $-color-black;
+}
+
+@media (min-width: $-tablet-width) {
+  .work__title {
+    width: 400px;
+    margin: 20px 20px 62px 0;
+    padding: 15px 10px 10px 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $-desktop-width) {
+  .work__title {
+    margin: 57px 20px 62px 0;
+  }
+}
+
+.work__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  counter-reset: cards;
+  padding: 0;
+  list-style: none;
+  gap: 20px;
+}
+
+@media (min-width: $-tablet-width) {
+  .work__list {
+    display: grid;
+    margin-bottom: 6px;
+    grid-template-columns: 249px 249px;
+    gap: 37px 137px;
+  }
+}
+
+@media (min-width: $-desktop-width) {
+  .work__list {
+    display: grid;
+    margin-bottom: 16px;
+    grid-template-columns: 249px 249px;
+    gap: 37px 79px;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $-desktop-width) {
+  .work__list {
+    display: flex;
+  }
+}
+
+.work__description {
+  padding-left: 30px;
+  margin-left: 50px;
+  font-family: "Lato", "Arilal", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $-color-black;
+}
+
+@media (min-width: $-tablet-width) {
+  .work__description {
+    width: 245px;
+    height: 72px;
+    margin: auto 0;
+    padding: 7px 0 0;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 1;
+  }
+}
+
+.work__item {
+  width: 280px;
+  height: 60px;
+  position: relative;
+}
+
+@media (min-width: $-tablet-width) {
+  .work__item {
+    display: flex;
+    width: 245px;
+    min-height: 280px;
+
+    &::after {
+      counter-increment: cards;
+      content: counter(cards);
+      position: absolute;
+      bottom: 39px;
+      right: 10px;
+      width: 134px;
+      height: 290px;
+      padding: 12px;
+      font-family: "Oswald", "Arilal", sans-serif;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+    }
+  }
+}
+
+.work__item--leaf::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 0;
+  top: 10px;
+  background-image: url("../../icons/group-leaf.svg");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $-tablet-width) {
+  .work__item--leaf::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    top: 0;
+    background-image: url("../../icons/group-leaf.svg");
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+  }
+}
+
+.work__item--prowder::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 0;
+  top: 10px;
+  background-image: url("../../icons/group-prowder.svg");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $-tablet-width) {
+  .work__item--prowder::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    top: 0;
+    background-image: url("../../icons/group-prowder.svg");
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+  }
+}
+
+.work__item--eat::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 0;
+  top: 10px;
+  background-image: url("../../icons/group-eat.svg");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $-tablet-width) {
+  .work__item--eat::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    top: 0;
+    background-image: url("../../icons/group-eat.svg");
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+  }
+}
+
+.work__item--watch::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 0;
+  top: 10px;
+  background-image: url("../../icons/group-watch.svg");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $-tablet-width) {
+  .work__item--watch::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 0;
+    top: 0;
+    background-image: url("../../icons/group-watch.svg");
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+  }
+}

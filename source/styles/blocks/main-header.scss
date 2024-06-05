@@ -1,0 +1,124 @@
+.main-header {
+  background-color: $-bg-white;
+}
+
+@media (min-width: $-tablet-width) {
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100px;
+  }
+}
+
+@media (min-width: $-desktop-width) {
+  .main-header {
+    min-height: 696px;
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: $-tablet-width) {
+  .main-header--catalog {
+    min-height: 0;
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: $-desktop-width) {
+  .main-header--catalog {
+    min-height: 0;
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: $-desktop-width) {
+  .main-header--index {
+    background-image: url("../../images/cat-full-green@2x.png"), linear-gradient(90deg, #ffffff 50%, #64a83b 50%);
+    background-size: 1041px 695px, 100%;
+    background-position: calc(50% + 520px) center, center;
+    background-repeat: no-repeat;
+  }
+}
+
+.main-header__main-nav {
+  display: none;
+}
+
+.main-header__wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 65px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+@media (min-width: $-tablet-width) {
+  .main-header__wrapper {
+    display: flex;
+    width: 700px;
+    margin-bottom: 33px;
+    min-height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+  }
+
+  .main-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $-desktop-width) {
+  .main-header__wrapper {
+    width: 1220px;
+    min-height: 60px;
+    margin-top: 55px;
+    margin-bottom: 43px;
+    justify-content: space-between;
+  }
+}
+
+.main-header__picture {
+  display: flex;
+  width: 280px;
+  height: 67px;
+  margin: 0 auto;
+  padding: 5px 90px 0 0;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $-tablet-width) {
+    width: 190px;
+    height: 67px;
+    margin-right: 94px;
+    margin-left: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: $-desktop-width) {
+  .main-header__logo--text {
+    margin-left: 14px;
+  }
+}
+
+.main-header__link:hover {
+  opacity: 0.6;
+}
+
+.main-header__link:active {
+  opacity: 0.4;
+}
+
+//.main-header__toggle {
+//  position: absolute;
+//  width: 24px;
+//  height: 24px;
+//  right: 0;
+//  background-color: $-bg-white;
+//  background-image: url("../../icons/stack.svg#gamburger");
+//  background-repeat: no-repeat;
+//  border: none;
+//}

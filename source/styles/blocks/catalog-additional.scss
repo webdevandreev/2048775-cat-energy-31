@@ -1,0 +1,208 @@
+.catalog-additional__title {
+  position: relative;
+  width: max-content;
+  padding: 5px 40px 15px 20px;
+  background-color: #ffffff;
+  color: $-color-black;
+  font-family: "Oswald", "Arilal", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  z-index: 2;
+}
+
+@media (min-width: $-tablet-width) {
+  .catalog-additional__title {
+    width: max-content;
+    margin: 75px -15px 80px;
+    padding: 0 35px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+@media (min-width: $-desktop-width) {
+  .catalog-additional__title {
+    margin: 75px 46px;
+    padding: 0 35px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.catalog-additional__gift {
+  display: flex;
+  position: relative;
+  width: 181px;
+  min-height: 60px;
+  padding: 10px;
+  margin: 0 auto 33px;
+  font-family: "Lato", "Arilal", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $-color-white;
+  text-align: center;
+  justify-content: center;
+  align-items: end;
+
+  @media (min-width: $-tablet-width) {
+    margin-bottom: 61px;
+    margin-right: 115px;
+    text-align: start;
+  }
+
+  @media (min-width: $-desktop-width) {
+    margin-bottom: 32px;
+    margin-right: 27px;
+    text-align: center;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 78px;
+    height: 80px;
+    background-image: url("../../icons/stack.svg#icon_gift");
+    top: 55px;
+  }
+
+  @media (min-width: $-tablet-width) {
+    &::after {
+      content: "";
+      top: 55px;
+      left: -333px;
+    }
+  }
+
+  @media (min-width: $-desktop-width) {
+    &::after {
+      content: "";
+      left: 45px;
+    }
+  }
+}
+
+.catalog-additional__wrapper {
+  width: 280px;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: $-tablet-width) {
+  .catalog-additional__wrapper {
+    width: 100%;
+  }
+
+  @media (min-width: $-desktop-width) {
+    .catalog-additional__wrapper {
+      width: 1370px;
+      display: flex;
+    }
+  }
+}
+
+.catalog-additional__decoration {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 37%;
+    transform: translateY(-50%);
+    z-index: 1;
+    height: 2px;
+    background-color: $-bg-green;
+  }
+}
+
+.catalog-additional__container {
+  margin-left: 12px;
+
+  @media (min-width: $-tablet-width) {
+    margin-left: 50px;
+  }
+}
+
+
+.catalog-additional__list {
+  margin-bottom: 34px;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #cdcdcd;
+}
+
+@media (min-width: $-tablet-width) {
+  .catalog-additional__list {
+    width: 708px;
+    margin: 0 auto 70px;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $-desktop-width) {
+    .catalog-additional__list {
+      width: 896px;
+      margin: 0 auto 70px;
+      border-left: none;
+      border-right: none;
+    }
+  }
+}
+
+.catalog-additional__item {
+  width: 280px;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+@media (min-width: $-tablet-width) {
+  .catalog-additional__item {
+    display: flex;
+    flex-flow: row wrap;
+    width: 706px;
+    padding: 26px 37px 28px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $-desktop-width) {
+    .catalog-additional__item {
+      display: flex;
+      width: 896px;
+      height: 72px;
+      padding: 15px 0;
+      justify-content: space-between;
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+}
+
+.catalog-additional__add {
+  display: flex;
+  width: 280px;
+  min-height: 290px;
+  margin: auto;
+  background-image: url("../../images/cat-bg-catalog@1x.png");
+  background-repeat: no-repeat;
+  background-size: 280px 290px;
+
+  @media (min-width: $-tablet-width) {
+    width: 707px;
+    min-height: 200px;
+    margin: auto;
+    background-image: url("../../images/cat-bg-gift@1x.png");
+    background-repeat: no-repeat;
+    background-size: 707px 200px;
+  }
+
+  @media (min-width: $-desktop-width) {
+    display: flex;
+    width: 245px;
+    min-height: 288px;
+    margin: 0 auto auto 0;
+    background-image: url("../../images/cat-greencatalog@1x.png");
+    background-repeat: no-repeat;
+    background-size: 245px 288px;
+  }
+}

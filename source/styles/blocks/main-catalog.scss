@@ -1,0 +1,10 @@
+.main-catalog {
+  background-color: $-bg-white;
+  border-top: 1px solid $-border-dark-grey;
+}
+
+@media (min-width: $-tablet-width) {
+  .main-catalog {
+    border: none;
+  }
+}

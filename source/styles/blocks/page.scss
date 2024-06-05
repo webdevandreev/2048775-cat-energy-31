@@ -1,0 +1,7 @@
+.page__body {
+  display: grid;
+  width: 100%;
+  min-height: 100%;
+  grid-template-rows: min-content 1fr min-content;
+  background-color: $-bg-white;
+}
