@@ -22,7 +22,6 @@
   }
 }
 
-
 .main-nav__wrapper {
   padding-left: 0;
   text-align: center;
@@ -61,13 +60,8 @@
   }
 }
 
-.main-nav__item--current {
-  text-decoration: underline solid $-basic-green;
-  text-underline-offset: 14px;
-  text-decoration-thickness: 2px;
-}
-
 .main-nav__page {
+  position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
@@ -91,7 +85,31 @@
 }
 
 @media (min-width: $-desktop-width) {
-  .main-nav__page--catalog {
+  .main-nav__page-catalog {
     color: $-color-black;
+  }
+}
+
+@media (min-width: $-tablet-width) {
+  .main-nav__page--current::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    right: 0;
+    bottom: -11px;
+    background-color: $-basic-green;
+  }
+}
+
+@media (min-width: $-tablet-width) {
+  .main-nav__page--current::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    right: 0;
+    bottom: -11px;
+    background-color: $-basic-green;
   }
 }
