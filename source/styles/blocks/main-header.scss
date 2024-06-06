@@ -42,7 +42,7 @@
 }
 
 .main-header__main-nav {
-  display: none;
+  display: block;
 }
 
 .main-header__wrapper {
@@ -52,6 +52,32 @@
   height: 65px;
   margin: 0 auto;
   border-bottom: 1px solid #e6e6e6;
+}
+
+.main-header__toggle {
+  display: none;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 0;
+  background-color: $-bg-white;
+  background-image: url("../../icons/stack.svg#gamburger");
+  background-repeat: no-repeat;
+  border: none;
+  z-index: 2;
+}
+
+.main-header__toggle--cross {
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  right: 0;
+  background-color: $-bg-white;
+  background-image: url("../../icons/stack.svg#cross-close");
+  background-repeat: no-repeat;
+  border: none;
+  z-index: 2;
 }
 
 @media (min-width: $-tablet-width) {
@@ -67,6 +93,14 @@
 
   .main-header__toggle {
     display: none;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 0;
+    background-color: $-bg-white;
+    background-image: url("../../icons/stack.svg#gamburger");
+    background-repeat: no-repeat;
+    border: none;
   }
 }
 
@@ -82,6 +116,7 @@
 
 .main-header__picture {
   display: flex;
+  position: relative;
   width: 280px;
   height: 67px;
   margin: 0 auto;
@@ -111,14 +146,3 @@
 .main-header__link:active {
   opacity: 0.4;
 }
-
-//.main-header__toggle {
-//  position: absolute;
-//  width: 24px;
-//  height: 24px;
-//  right: 0;
-//  background-color: $-bg-white;
-//  background-image: url("../../icons/stack.svg#gamburger");
-//  background-repeat: no-repeat;
-//  border: none;
-//}
