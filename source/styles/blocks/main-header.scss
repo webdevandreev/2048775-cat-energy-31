@@ -2,6 +2,22 @@
   background-color: $-bg-white;
 }
 
+@media (min-width: $-tablet-width) {
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100px;
+  }
+}
+
+@media (min-width: $-desktop-width) {
+  .main-header {
+    min-height: 696px;
+    margin-bottom: 80px;
+  }
+}
+
 .main-header__main-nav {
   position: relative;
 }
@@ -18,37 +34,40 @@
   width: 100%;
   background-color: $-bg-white;
   z-index: 1;
+}
 
-  @media (min-width: $-mobile-width-only) {
-    .main-header__toggle--cross {
-      display: block;
-      position: absolute;
-      width: 18px;
-      height: 18px;
-      right: 20px;
-      top: -42px;
-      background-color: $-bg-white;
-      background-image: url("../../icons/stack.svg#cross-close");
-      background-repeat: no-repeat;
-      border: none;
-      z-index: 2;
-    }
+.main-header__toggle {
+  display: none;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 20px;
+  top: -42px;
+  background-color: $-bg-white;
+  background-image: url("../../icons/stack.svg#gamburger");
+  background-repeat: no-repeat;
+  border: none;
+
+  @media (min-width: $-tablet-width) {
+    display: none;
   }
 }
 
-@media (min-width: $-tablet-width) {
-  .main-header {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 100px;
-  }
-}
+.main-header__toggle--cross {
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  right: 20px;
+  top: -42px;
+  background-color: $-bg-white;
+  background-image: url("../../icons/stack.svg#cross-close");
+  background-repeat: no-repeat;
+  border: none;
+  z-index: 2;
 
-@media (min-width: $-desktop-width) {
-  .main-header {
-    min-height: 696px;
-    margin-bottom: 80px;
+  @media (min-width: $-tablet-width) {
+    display: none;
   }
 }
 
@@ -83,37 +102,6 @@
   margin: 0 auto;
 }
 
-.main-header__toggle {
-  display: none;
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  right: 0;
-  background-color: $-bg-white;
-  background-image: url("../../icons/stack.svg#gamburger");
-  background-repeat: no-repeat;
-  border: none;
-  z-index: 2;
-}
-
-.main-header__toggle--cross {
-  display: none;
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  right: 20px;
-  top: -42px;
-  background-color: $-bg-white;
-  background-image: url("../../icons/stack.svg#cross-close");
-  background-repeat: no-repeat;
-  border: none;
-  z-index: 2;
-
-  @media (min-width: $-tablet-width) {
-    display: none;
-  }
-}
-
 @media (min-width: $-tablet-width) {
   .main-header__wrapper {
     display: flex;
@@ -122,18 +110,6 @@
     min-height: 100px;
     align-items: center;
     justify-content: space-between;
-    border: none;
-  }
-
-  .main-header__toggle {
-    display: none;
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    right: 0;
-    background-color: $-bg-white;
-    background-image: url("../../icons/stack.svg#gamburger");
-    background-repeat: no-repeat;
     border: none;
   }
 }
