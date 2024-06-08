@@ -20,9 +20,11 @@
 
 .main-header__main-nav {
   position: relative;
+  display: none;
 }
 
 .main-header__main-nav--no-js {
+  position: relative;
   display: block;
   width: 100%;
   background-color: $-bg-white;
@@ -30,7 +32,7 @@
 }
 
 .main-header__main-nav--oppened {
-  display: block;
+  display: none;
   width: 100%;
   background-color: $-bg-white;
   z-index: 1;
@@ -38,11 +40,19 @@
 
 .main-header__toggle {
   display: none;
+  border: none;
+
+  @media (min-width: $-tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__toggle-hamburger {
+  display: block;
   position: absolute;
   width: 24px;
   height: 24px;
   right: 20px;
-  top: -42px;
   background-color: $-bg-white;
   background-image: url("../../icons/stack.svg#gamburger");
   background-repeat: no-repeat;
@@ -53,13 +63,12 @@
   }
 }
 
-.main-header__toggle--cross {
+.main-header__toggle-cross {
   display: block;
   position: absolute;
   width: 18px;
   height: 18px;
   right: 20px;
-  top: -42px;
   background-color: $-bg-white;
   background-image: url("../../icons/stack.svg#cross-close");
   background-repeat: no-repeat;
