@@ -18,6 +18,67 @@
   }
 }
 
+.main-header__main-nav {
+  position: relative;
+}
+
+.main-header__main-nav--no-js {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: $-bg-white;
+  z-index: 1;
+}
+
+.main-header__main-nav--oppened {
+  display: none;
+  width: 100%;
+  background-color: $-bg-white;
+  z-index: 1;
+}
+
+.main-header__toggle {
+  display: none;
+  border: none;
+
+  @media (min-width: $-tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__toggle-hamburger {
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 20px;
+  background-color: $-bg-white;
+  background-image: url("../../icons/stack.svg#gamburger");
+  background-repeat: no-repeat;
+  border: none;
+
+  @media (min-width: $-tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__toggle-cross {
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  right: 20px;
+  background-color: $-bg-white;
+  background-image: url("../../icons/stack.svg#cross-close");
+  background-repeat: no-repeat;
+  border: none;
+  z-index: 2;
+
+  @media (min-width: $-tablet-width) {
+    display: none;
+  }
+}
+
 @media (min-width: $-tablet-width) {
   .main-header--catalog {
     min-height: 0;
@@ -41,43 +102,12 @@
   }
 }
 
-.main-header__main-nav {
-  display: block;
-}
-
 .main-header__wrapper {
   position: relative;
   display: block;
   width: 100%;
-  height: 65px;
+  min-height: 66px;
   margin: 0 auto;
-  border-bottom: 1px solid #e6e6e6;
-}
-
-.main-header__toggle {
-  display: none;
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  right: 0;
-  background-color: $-bg-white;
-  background-image: url("../../icons/stack.svg#gamburger");
-  background-repeat: no-repeat;
-  border: none;
-  z-index: 2;
-}
-
-.main-header__toggle--cross {
-  display: block;
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  right: 0;
-  background-color: $-bg-white;
-  background-image: url("../../icons/stack.svg#cross-close");
-  background-repeat: no-repeat;
-  border: none;
-  z-index: 2;
 }
 
 @media (min-width: $-tablet-width) {
@@ -88,18 +118,6 @@
     min-height: 100px;
     align-items: center;
     justify-content: space-between;
-    border: none;
-  }
-
-  .main-header__toggle {
-    display: none;
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    right: 0;
-    background-color: $-bg-white;
-    background-image: url("../../icons/stack.svg#gamburger");
-    background-repeat: no-repeat;
     border: none;
   }
 }

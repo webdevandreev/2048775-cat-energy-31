@@ -1,11 +1,3 @@
-.main-nav {
-  position: absolute;
-  width: 100%;
-  background-color: $-bg-white;
-  z-index: 1;
-  top: 65px;
-}
-
 @media (min-width: $-tablet-width) {
   .main-nav {
     position: static;
