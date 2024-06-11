@@ -79,7 +79,8 @@
 }
 
 @media (min-width: $-desktop-width) {
-  .main-nav__page-catalog {
+  .main-nav__page-catalog,
+  .main-nav__page-selection {
     color: $-color-black;
   }
 }
