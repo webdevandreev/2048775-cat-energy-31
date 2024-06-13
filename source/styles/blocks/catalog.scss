@@ -119,11 +119,8 @@
     border: 1px solid #f2f2f2;
 
     &::before {
-      content: "";
-      position: absolute;
       width: 60px;
       height: 60px;
-      background-image: url("../../icons/plus.svg");
       top: 50px;
       right: 131px;
     }
@@ -131,11 +128,6 @@
 
   @media (min-width: $-desktop-width) {
     &::before {
-      content: "";
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      background-image: url("../../icons/plus.svg");
       top: 50px;
       right: 91px;
     }
