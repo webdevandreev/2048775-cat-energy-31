@@ -2,18 +2,14 @@
   width: 280px;
   min-height: 380px;
   margin: 0 auto 49px;
-}
 
-@media (min-width: $-tablet-width) {
-  .work {
+  @media (min-width: $-tablet-width) {
     width: 708px;
     min-height: 644px;
     margin-bottom: 6px;
   }
-}
 
-@media (min-width: $-desktop-width) {
-  .work {
+  @media (min-width: $-desktop-width) {
     width: 1220px;
     min-height: 400px;
     margin: 0 auto;
@@ -27,20 +23,16 @@
   font-size: 36px;
   line-height: 40px;
   color: $-color-black;
-}
 
-@media (min-width: $-tablet-width) {
-  .work__title {
+  @media (min-width: $-tablet-width) {
     width: 400px;
     margin: 20px 20px 62px 0;
     padding: 15px 10px 10px 0;
     font-size: 60px;
     line-height: 60px;
   }
-}
 
-@media (min-width: $-desktop-width) {
-  .work__title {
+  @media (min-width: $-desktop-width) {
     margin: 57px 20px 62px 0;
   }
 }
@@ -52,19 +44,14 @@
   padding: 0;
   list-style: none;
   gap: 20px;
-}
 
-@media (min-width: $-tablet-width) {
-  .work__list {
-    display: grid;
+  @media (min-width: $-tablet-width) {
     margin-bottom: 6px;
     grid-template-columns: 249px 249px;
     gap: 37px 137px;
   }
-}
 
-@media (min-width: $-desktop-width) {
-  .work__list {
+  @media (min-width: $-desktop-width) {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 16px;
@@ -80,10 +67,8 @@
   font-size: 14px;
   line-height: 18px;
   color: $-color-black;
-}
 
-@media (min-width: $-tablet-width) {
-  .work__description {
+  @media (min-width: $-tablet-width) {
     width: 245px;
     min-height: 72px;
     margin: 100px 0;
@@ -119,7 +104,7 @@
       font-weight: 400;
       font-size: 280px;
       line-height: 280px;
-      color: #f2f2f2;
+      color: $-basic-grey;
     }
   }
 }
@@ -134,19 +119,12 @@
   background-image: url("../../icons/group-leaf.svg");
   background-size: 60px 60px;
   background-repeat: no-repeat;
-}
 
-@media (min-width: $-tablet-width) {
-  .work__item--leaf::before {
-    content: "";
-    position: absolute;
+  @media (min-width: $-tablet-width) {
     width: 80px;
     height: 80px;
-    left: 0;
     top: 0;
-    background-image: url("../../icons/group-leaf.svg");
     background-size: 80px 80px;
-    background-repeat: no-repeat;
   }
 }
 
@@ -160,17 +138,11 @@
   background-image: url("../../icons/group-prowder.svg");
   background-size: 60px 60px;
   background-repeat: no-repeat;
-}
 
-@media (min-width: $-tablet-width) {
-  .work__item--prowder::before {
-    content: "";
-    position: absolute;
+  @media (min-width: $-tablet-width) {
     width: 80px;
     height: 80px;
-    left: 0;
     top: 0;
-    background-image: url("../../icons/group-prowder.svg");
     background-size: 80px 80px;
     background-repeat: no-repeat;
   }
@@ -186,17 +158,11 @@
   background-image: url("../../icons/group-eat.svg");
   background-size: 60px 60px;
   background-repeat: no-repeat;
-}
 
-@media (min-width: $-tablet-width) {
-  .work__item--eat::before {
-    content: "";
-    position: absolute;
+  @media (min-width: $-tablet-width) {
     width: 80px;
     height: 80px;
-    left: 0;
     top: 0;
-    background-image: url("../../icons/group-eat.svg");
     background-size: 80px 80px;
     background-repeat: no-repeat;
   }
@@ -212,17 +178,11 @@
   background-image: url("../../icons/group-watch.svg");
   background-size: 60px 60px;
   background-repeat: no-repeat;
-}
 
-@media (min-width: $-tablet-width) {
-  .work__item--watch::before {
-    content: "";
-    position: absolute;
+  @media (min-width: $-tablet-width) {
     width: 80px;
     height: 80px;
-    left: 0;
     top: 0;
-    background-image: url("../../icons/group-watch.svg");
     background-size: 80px 80px;
     background-repeat: no-repeat;
   }

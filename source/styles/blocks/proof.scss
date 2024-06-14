@@ -1,17 +1,17 @@
 .proof {
   width: 100%;
   min-height: 660px;
-  background-color: #eaeaea;
+  background-color: $-smoky-white;
 
   @media (min-width: $-tablet-width) {
     background-color: $-bg-white;
     min-height: 618px;
-    border-top: 1px solid #d9d9d9;
+    border-top: 1px solid $-border-dark-grey;
   }
 
   @media (min-width: $-desktop-width) {
     border: none;
-    background: linear-gradient(#ffffff 149px, #f2f2f2 149px);
+    background: linear-gradient($-bg-white 149px, $-basic-grey 149px);
     min-height: 610px;
   }
 }
@@ -39,7 +39,7 @@
     width: 436px;
     display: grid;
     margin-bottom: 0;
-    background: linear-gradient(#ffffff 149px, #f2f2f2 149px);
+    background: linear-gradient($-bg-white 149px, $-basic-grey 149px);
   }
 }
 
@@ -63,8 +63,6 @@
   @media (min-width: $-desktop-width) {
     padding: 12px 0;
     margin: 0 0 25px;
-    font-size: 60px;
-    line-height: 60px;
   }
 }
 
@@ -84,11 +82,8 @@
 
   @media (min-width: $-desktop-width) {
     width: 433px;
-    min-height: 72px;
     margin: 84px 0 44px;
     padding: 25px 0;
-    font-size: 16px;
-    line-height: 24px;
     align-self: center;
   }
 }
@@ -115,33 +110,27 @@
   justify-content: space-between;
 
   @media (min-width: $-tablet-width) {
-    display: flex;
     width: 367px;
     min-height: 77px;
-    justify-content: space-between;
   }
 
   @media (min-width: $-desktop-width) {
-    display: flex;
-    width: 367px;
-    min-height: 77px;
-    justify-content: space-between;
     margin-bottom: 34px;
   }
 }
 
 .proof__list {
-  margin-top: 5px;
   width: 124px;
   height: 56px;
+  margin-top: 5px;
   font-family: "Oswald", "Arilal", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: $-color-black;
-  border: 1px solid #cdcdcd;
+  background-color: $-smoky-white;
+  border: 1px solid $-add-light-telegraph;
   border-radius: 3px;
-  background-color: #eaeaea;
   text-align: center;
   text-transform: uppercase;
 
@@ -167,7 +156,7 @@
   width: 87px;
   padding: 0 5px;
   margin: 9px auto 0;
-  background-color: #eaeaea;
+  background-color: $-smoky-white;
   font-family: "Lato", "Arilal", sans-serif;
   font-size: 12px;
   line-height: 12px;
@@ -176,7 +165,6 @@
   @media (min-width: $-tablet-width) {
     width: max-content;
     height: 14px;
-    padding: 0 5px;
     margin: 12px auto 0;
     font-size: 14px;
     line-height: 14px;
@@ -184,11 +172,8 @@
   }
 
   @media (min-width: $-desktop-width) {
-    width: max-content;
-    height: 14px;
-    padding: 0 5px;
     margin: 11px auto 0;
-    background-color: #f2f2f2;
+    background-color: $-basic-grey;
   }
 }
 
@@ -202,8 +187,7 @@
 
   @media (min-width: $-tablet-width) {
     width: 172px;
-    margin-top: 0;
-    margin-bottom: 26px;
+    margin: 0 0 26px;
     font-size: 20px;
     line-height: 27px;
     text-align: end;
@@ -212,8 +196,6 @@
   @media (min-width: $-desktop-width) {
     display: flex;
     width: 328px;
-    font-size: 20px;
-    line-height: 27px;
     text-align: start;
     justify-content: space-between;
   }
@@ -228,38 +210,38 @@
   padding: 0;
   border-radius: 2px;
   border: none;
-  background-color: #666666;
+  background-color: $-dark-grey;
   cursor: pointer;
   z-index: 4;
-}
 
-.proof__button::before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 50%;
-  left: 50%;
-  border: 2px solid #666666;
-  border-radius: 50%;
-  background-color: #ffffff;
-  transform: translate(-50%, -50%);
-}
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    border: 2px solid $-dark-grey;
+    border-radius: 50%;
+    background-color: $-bg-white;
+    transform: translate(-50%, -50%);
+  }
 
-.proof__button::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 24px;
-  height: 18px;
-  top: 50%;
-  left: 50%;
-  background-color: #666666;
-  mask-image: url("../../icons/stack.svg#sliderarrow");
-  mask-position: 50%;
-  mask-size: 24px 18px;
-  mask-repeat: no-repeat;
-  transform: translate(-50%, -50%);
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    background-color: $-dark-grey;
+    mask-image: url("../../icons/stack.svg#sliderarrow");
+    mask-position: 50%;
+    mask-size: 24px 18px;
+    mask-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .proof__button:hover {

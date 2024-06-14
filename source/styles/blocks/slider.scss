@@ -3,22 +3,17 @@
   width: 280px;
   height: 256px;
   margin: 0 auto;
-}
 
-@media (min-width: $-tablet-width) {
-  .slider {
+  @media (min-width: $-tablet-width) {
     width: 100%;
     min-height: 611px;
-    background: linear-gradient(#ffffff 149px, #eaeaea 149px);
+    background: linear-gradient($-bg-white 149px, $-smoky-white 149px);
   }
 
   @media (min-width: $-desktop-width) {
-    .slider {
-      width: 100%;
-      min-height: 512px;
-      background: linear-gradient(#ffffff 149px, #f2f2f2 149px);
-      margin-left: 223px;
-    }
+    min-height: 512px;
+    background: linear-gradient($-bg-white 149px, $-basic-grey 149px);
+    margin-left: 223px;
   }
 }
 
@@ -28,15 +23,17 @@
   grid-template-columns: 280px;
   grid-column: 1 / -1;
   grid-row: 1 / -1;
-}
 
-@media (min-width: $-tablet-width) {
-  .slider__images {
+  @media (min-width: $-tablet-width) {
     width: 560px;
     height: 512px;
     margin: 0 auto;
     grid-template-columns: 560px;
   }
+}
+
+.slider-image {
+  display: block;
 }
 
 .slider__image-wrapper {
@@ -47,39 +44,25 @@
 
 .slider__image-wrapper--before {
   z-index: 3;
-  background-color: #eaeaea;
-}
+  background-color: $-smoky-white;
 
-@media (min-width: $-tablet-width) {
-  .slider__image-wrapper--before {
-    z-index: 3;
-    background: linear-gradient(to bottom, $-color-white 149px, #eaeaea 149px);
+  @media (min-width: $-tablet-width) {
+    background: linear-gradient(to bottom, $-color-white 149px, $-smoky-white 149px);
   }
 
   @media (min-width: $-desktop-width) {
-    .slider__image-wrapper--before {
-      z-index: 3;
-      background: linear-gradient(to bottom, $-color-white 149px, #f2f2f2 149px);
-    }
+    background: linear-gradient(to bottom, $-color-white 149px, $-basic-grey 149px);
   }
 }
 
 .slider__image-wrapper--after {
-  background-color: #eaeaea;
-}
+  background-color: $-smoky-white;
 
-@media (min-width: $-tablet-width) {
-  .slider__image-wrapper--after {
-    background: linear-gradient(to bottom, $-color-white 149px, #eaeaea 149px);
+  @media (min-width: $-tablet-width) {
+    background: linear-gradient(to bottom, $-color-white 149px, $-smoky-white 149px);
   }
 
   @media (min-width: $-desktop-width) {
-    .slider__image-wrapper--after {
-      background: linear-gradient(to bottom, $-color-white 149px, #f2f2f2 149px);
-    }
+    background: linear-gradient(to bottom, $-color-white 149px, $-basic-grey 149px);
   }
-}
-
-.slider-image {
-  display: block;
 }
