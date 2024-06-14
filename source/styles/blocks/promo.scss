@@ -45,6 +45,18 @@
   color: $-color-black;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $-tablet-width) {
+    padding: 77px 0 0 34px;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+  }
+
+  @media (min-width: $-desktop-width) {
+    padding: 77px 0 36px 44px;
+    text-align: center;
+  }
 }
 
 .promo__item--slim .promo__item-title {
@@ -59,24 +71,6 @@
   }
 }
 
-@media (min-width: $-tablet-width) {
-  .promo__item-title {
-    padding: 77px 0 0 34px;
-    font-size: 36px;
-    line-height: 36px;
-    text-align: left;
-  }
-}
-
-@media (min-width: $-desktop-width) {
-  .promo__item-title {
-    padding: 77px 0 36px 44px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 36px;
-  }
-}
-
 .promo__item--slim::before {
   content: "";
   position: absolute;
@@ -86,6 +80,18 @@
   left: 20px;
   bottom: 22px;
   background-image: url("../../icons/stack.svg#cat-slim-component");
+
+  @media (min-width: $-tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $-desktop-width) {
+    display: block;
+    width: 100px;
+    height: 106px;
+    top: 41px;
+    left: 52px;
+  }
 }
 
 @media (min-width: $-tablet-width) {
@@ -97,31 +103,6 @@
     top: 81px;
     right: 63px;
     background-image: url("../../icons/stack.svg#cat-slim-component");
-  }
-}
-
-@media (min-width: $-desktop-width) {
-  .promo__item--slim::before {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 106px;
-    top: 41px;
-    left: 52px;
-    bottom: 22px;
-    background-image: url("../../icons/stack.svg#cat-slim-component");
-  }
-}
-
-@media (min-width: $-tablet-width) {
-  .promo__item--slim::before {
-    display: none;
-  }
-}
-
-@media (min-width: $-desktop-width) {
-  .promo__item--slim::before {
-    display: block;
   }
 }
 
@@ -140,6 +121,18 @@
   left: 12px;
   bottom: 22px;
   background-image: url("../../icons/stack.svg#cat-pro-component");
+
+  @media (min-width: $-tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $-desktop-width) {
+    display: block;
+    width: 134px;
+    height: 100px;
+    top: 46px;
+    left: 34px;
+  }
 }
 
 @media (min-width: $-tablet-width) {
@@ -156,31 +149,6 @@
 }
 
 @media (min-width: $-desktop-width) {
-  .promo__item--pro::before {
-    content: "";
-    position: absolute;
-    width: 134px;
-    height: 100px;
-    top: 46px;
-    left: 34px;
-    bottom: 22px;
-    background-image: url("../../icons/stack.svg#cat-pro-component");
-  }
-}
-
-@media (min-width: $-tablet-width) {
-  .promo__item--pro::before {
-    display: none;
-  }
-}
-
-@media (min-width: $-desktop-width) {
-  .promo__item--pro::before {
-    display: block;
-  }
-}
-
-@media (min-width: $-desktop-width) {
   .promo__item--pro::after {
     display: none;
   }
@@ -189,16 +157,14 @@
 .promo__item-description {
   width: 241px;
   min-height: 90px;
-  margin-top: 0;
-  margin-left: 20px;
-  margin-bottom: 18px;
+  margin: 0 0 18px 20px;
   padding-bottom: 22px;
   font-family: "Lato", "Arilal", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: $-color-black;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $-border-dark-grey;
 
   @media (min-width: $-tablet-width) {
     width: 398px;
@@ -214,8 +180,6 @@
     min-height: 72px;
     margin: 27px 0 24px 13px;
     padding: 10px 10px 10px 39px;
-    font-size: 16px;
-    line-height: 24px;
   }
 }
 
@@ -242,8 +206,6 @@
   @media (min-width: $-desktop-width) {
     margin-left: 52px;
     padding: 0;
-    font-size: 20px;
-    line-height: 20px;
   }
 }
 
@@ -269,10 +231,8 @@
   background-image: url("../../icons/arrow.svg");
   overflow: hidden;
   transition: transform 0.3s ease;
-}
 
-@media (min-width: $-desktop-width) {
-  .promo__catalog-slim::after {
+  @media (min-width: $-desktop-width) {
     top: 41%;
     left: 107%;
   }
@@ -299,19 +259,17 @@
 .promo__catalog-pro::after {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 105%;
-  transform: translateY(-50%);
-  right: 20px;
   width: 32px;
   height: 12px;
+  top: 50%;
+  right: 20px;
+  left: 105%;
+  transform: translateY(-50%);
   background-image: url("../../icons/arrow.svg");
   overflow: hidden;
   transition: transform 0.3s ease;
-}
 
-@media (min-width: $-desktop-width) {
-  .promo__catalog-pro::after {
+  @media (min-width: $-desktop-width) {
     top: 41%;
     left: 103%;
   }
