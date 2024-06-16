@@ -70,6 +70,18 @@
     line-height: 20px;
     color: $-color-white;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__page.main-nav__page--current {
+  opacity: 1;
 }
 
 @media (min-width: $-desktop-width) {
