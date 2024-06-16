@@ -77,4 +77,12 @@
   @media (min-width: $-desktop-width) {
     width: 244px;
   }
+
+  &:hover {
+    background-color: $-basic-green-hover;
+  }
+
+  &:active {
+    color: $-shiny-yellowish-green;
+  }
 }
