@@ -86,6 +86,13 @@
   }
 }
 
+@media (min-width: $-tablet-width) {
+  .main-header--selection {
+    min-height: 0;
+    margin-bottom: 8px;
+  }
+}
+
 .main-header__wrapper {
   position: relative;
   display: block;

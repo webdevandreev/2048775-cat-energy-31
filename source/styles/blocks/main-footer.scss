@@ -27,6 +27,14 @@
   @media (min-width: $-tablet-width) {
     margin: 0;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 }
 
 .main-footer__copyright {
