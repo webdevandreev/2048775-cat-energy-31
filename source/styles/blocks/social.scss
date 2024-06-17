@@ -21,19 +21,31 @@
   list-style: none;
 }
 
-.social__icon {
-  fill: currentColor;
-}
-
 .social__link {
-  color: $-dark-grey;
+  display: flex;
+  width: 28px;
+  height: 22px;
+  background-color: $-dark-grey;
+  mask-size: 28px 22px;
+  mask-repeat: no-repeat;
 
-  &:hover .social__icon {
-    color: $-basic-green;
+  &--vkontakte {
+    mask-image: url("../../icons/stack.svg#vector-vk-mask");
   }
 
-  &:active .social__icon {
-    opacity: 0.2;
-    fill: $-basic-green;
+  &--youtube {
+    mask-image: url("../../icons/stack.svg#vector-youtube-mask");
+  }
+
+  &--telegram {
+    mask-image: url("../../icons/stack.svg#vector-telega-mask");
+  }
+
+  &:hover {
+    background-color: $-basic-green-hover;
+  }
+
+  &:active {
+    opacity: 0.5;
   }
 }
