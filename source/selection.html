@@ -68,14 +68,20 @@
         <fieldset class="group__element element">
           <legend class="visually-hidden">Укажите имя, вес, возраст кота</legend>
           <label class="element__name" for="name">
-            Имя:*<input class="element__input" id="name" type="text" name="name" autocomplete="on">
+            Имя:*<input class="element__input" id="name" type="text" name="worksheet" autocomplete="on">
           </label>
           <label class="element__name" for="mass">
-            Вес (кг):*<input class="element__input" id="mass" type="number" name="mass" autocomplete="on">
+            Вес (кг):*<input class="element__input" id="mass" type="number" name="worksheet" autocomplete="on">
           </label>
           <label class="element__name" for="age">
-            Возраст (лет):<input class="element__input" id="age" type="number" name="age" autocomplete="on">
+            Возраст (лет):<input class="element__input" id="age" type="number" name="worksheet" autocomplete="on">
           </label>
+        </fieldset>
+        <fieldset class="group__radio radio">
+          <legend class="visually-hidden">Выберите один из показателей, похудение, набор массы или не знаю (нужен ваш совет)</legend>
+          <label class="radio__name diet" for="slim"><input class="diet__input" type="radio" id="slim" name="diet" value="slim" checked>Похудение</label>
+          <label class="radio__name diet" for="body"><input class="diet__input" type="radio" id="body" name="diet" value="body">Набор массы</label>
+          <label class="radio__name diet" for="dontknow"><input class="diet__input" type="radio" id="dontknow" name="diet" value="dontknow">Не знаю (Нужен ваш совет)</label>
         </fieldset>
       </form>
     </section>
