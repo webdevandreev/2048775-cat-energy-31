@@ -1,0 +1,22 @@
+.diet__input {
+  display: inline-grid;
+  place-content: center;
+  appearance: none;
+  background-color: #ffffff;
+  margin: 0 15px 13px 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $-add-light-telegraph;
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+  }
+
+  &:checked::before {
+    box-shadow: inset 1em 1em $-basic-green;
+  }
+}

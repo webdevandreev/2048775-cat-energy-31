@@ -8,6 +8,21 @@
 
 .group__element {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   border: none;
+
+  @media (min-width: $-tablet-width) {
+    padding: 0;
+  }
+}
+
+.group__radio {
+  display: grid;
+  margin: 0;
+  padding: 20px 20px 5px 0;
+  border: 1px solid $-special-dark-grey;
+
+  @media (min-width: $-tablet-width) {
+    width: 628px;
+  }
 }
