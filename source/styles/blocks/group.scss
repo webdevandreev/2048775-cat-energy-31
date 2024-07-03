@@ -20,16 +20,35 @@
   display: grid;
   margin: 0 0 26px;
   padding: 20px 20px 5px 0;
-  border: 1px solid $-special-dark-grey;
+  border-top: 1px solid $-special-dark-grey;
+  border-bottom: 1px solid $-special-dark-grey;
+  border-left: none;
+  border-right: none;
 
   @media (min-width: $-tablet-width) {
     width: 628px;
     margin-bottom: 65px;
+    border: 1px solid $-special-dark-grey;
   }
 }
 
 .group__data {
+  margin: 0 0 14px;
+  padding: 0 20px;
+  border: none;
+}
+
+.group__comment {
+  display: inline-grid;
+  margin: 0 0 23px;
+  padding: 0 20px;
+  border: none;
+}
+
+.group__add {
+  display: grid;
   margin: 0;
   padding: 0 20px;
   border: none;
+  border-top: 2px solid $-basic-green;
 }
