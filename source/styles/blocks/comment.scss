@@ -1,5 +1,5 @@
 .comment__text {
-  margin: 0;
+  margin: 0 20px;
   padding: 14px;
   font-family: "Oswald", "Arilal", sans-serif;
   font-size: 16px;
@@ -11,5 +11,14 @@
 }
 
 .comment__story {
-  margin-bottom: 36px;
+  width: 161px;
+  padding: 0 20px;
+  margin: -15px 0 36px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $-color-black;
+  background-color: $-bg-white;
+  text-transform: none;
 }

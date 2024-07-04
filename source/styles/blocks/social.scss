@@ -28,6 +28,7 @@
   background-color: $-dark-grey;
   mask-size: 28px 22px;
   mask-repeat: no-repeat;
+  cursor: pointer;
 
   &--vkontakte {
     mask-image: url("../../icons/stack.svg#vector-vk-mask");
@@ -43,6 +44,10 @@
 
   &:hover {
     background-color: $-basic-green-hover;
+  }
+
+  &:focus {
+    background-color: $-basic-green;
   }
 
   &:active {
