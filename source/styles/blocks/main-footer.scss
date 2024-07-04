@@ -3,11 +3,14 @@
 }
 
 .main-footer__wrapper {
+  padding-top: 20px;
+
   @media (min-width: $-tablet-width) {
     display: flex;
     width: 708px;
     min-height: 147px;
     margin: 0 auto;
+    padding-top: 0;
     align-items: center;
   }
 
