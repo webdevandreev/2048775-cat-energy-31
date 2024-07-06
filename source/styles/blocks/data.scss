@@ -1,4 +1,5 @@
 .data__title {
+  position: relative;
   width: 222px;
   margin-bottom: 35px;
   padding: 20px 20px 0;
@@ -7,18 +8,34 @@
   font-size: 24px;
   line-height: 26px;
   color: $-color-black;
+  background-color: $-bg-white;
   text-transform: none;
+  z-index: 1;
+
+  @media (min-width: $-tablet-width) {
+    width: 594px;
+    padding: 0 40px 20px;
+    margin-left: 30px;
+    margin-bottom: 56px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .data__email,
 .data__phone {
   display: flex;
   margin: 0 0 14px;
-  padding: 0 0 0 20px;
+  padding: 0 20px;
   white-space: nowrap;
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
+
+  @media (min-width: $-tablet-width) {
+    padding: 0 70px;
+    margin-bottom: 20px;
+  }
 }
 
 .data__input {

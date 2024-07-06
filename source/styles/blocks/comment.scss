@@ -1,6 +1,6 @@
 .comment__text {
-  margin: 0 20px;
-  padding: 14px;
+  margin: 36px 20px 0;
+  padding: 14px 10px;
   font-family: "Oswald", "Arilal", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -8,12 +8,21 @@
   color: #444444;
   text-transform: uppercase;
   border: 1px solid $-special-dark-grey;
+
+  @media (min-width: $-tablet-width) {
+    width: 628px;
+    margin-top: 86px;
+    margin-left: 70px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .comment__story {
+  display: block;
+  position: relative;
   width: 161px;
   padding: 0 20px;
-  margin: -15px 0 36px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -21,4 +30,13 @@
   color: $-color-black;
   background-color: $-bg-white;
   text-transform: none;
+  z-index: 1;
+
+  @media (min-width: $-tablet-width) {
+    width: 262px;
+    margin-left: 30px;
+    padding: 0 40px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
