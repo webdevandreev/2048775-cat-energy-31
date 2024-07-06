@@ -5,6 +5,11 @@
   line-height: 18px;
   color: $-color-dark-grey;
   text-transform: uppercase;
+
+  @media (min-width: $-tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .group__element {
@@ -13,7 +18,7 @@
   border: none;
 
   @media (min-width: $-tablet-width) {
-    padding: 0;
+    padding: 0 70px;
     margin-bottom: 52px;
   }
 }
@@ -30,29 +35,92 @@
   @media (min-width: $-tablet-width) {
     width: 628px;
     margin-bottom: 65px;
+    margin-left: 70px;
+    padding-left: 3px;
     border: 1px solid $-special-dark-grey;
   }
 }
 
 .group__data {
+  position: relative;
   margin: 0 0 14px;
-  padding: 0 20px 0 0;
+  padding: 0;
   border: none;
-  border-top: 2px solid $-basic-green;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    top: -70px;
+    left: 0;
+    right: 0;
+    background-color: $-basic-green;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+
+  @media (min-width: $-tablet-width) {
+    margin-bottom: 56px;
+
+    &::before {
+      top: -92px;
+    }
+  }
 }
 
 .group__comment {
-  display: inline-grid;
+  position: relative;
   margin: 0 0 23px;
   padding: 0;
   border: none;
-  border-top: 2px solid $-basic-green;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    top: 17px;
+    left: 0;
+    right: 0;
+    background-color: $-basic-green;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+
+  @media (min-width: $-tablet-width) {
+    margin-bottom: 65px;
+
+    &::before {
+      top: 20px;
+    }
+  }
 }
 
 .group__add {
   display: grid;
+  position: relative;
   margin: 0;
   padding: 0;
   border: none;
-  border-top: 2px solid $-basic-green;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    top: -43px;
+    left: 0;
+    right: 0;
+    background-color: $-basic-green;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+
+  @media (min-width: $-tablet-width) {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 70px;
+
+    &::before {
+      top: -67px;
+    }
+  }
 }
