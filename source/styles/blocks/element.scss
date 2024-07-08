@@ -6,6 +6,10 @@
   justify-content: space-between;
   text-transform: uppercase;
   white-space: nowrap;
+
+  @media (min-width: $-desktop-width) {
+    justify-content: start;
+  }
 }
 
 .element__input {
@@ -14,4 +18,8 @@
   padding: 0;
   height: 40px;
   border: 1px solid $-special-dark-grey;
+
+  @media (min-width: $-desktop-width) {
+    height: 52px;
+  }
 }

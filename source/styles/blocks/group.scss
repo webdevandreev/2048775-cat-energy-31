@@ -10,6 +10,11 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $-desktop-width) {
+    display: flex;
+    flex-flow: row wrap;
+  }
 }
 
 .group__element {
@@ -20,6 +25,11 @@
   @media (min-width: $-tablet-width) {
     padding: 0 70px;
     margin-bottom: 52px;
+  }
+
+  @media (min-width: $-desktop-width) {
+    width: 52.9%;
+    padding: 0 80px 0 110px;
   }
 }
 
@@ -38,6 +48,11 @@
     margin-left: 70px;
     padding-left: 3px;
     border: 1px solid $-special-dark-grey;
+  }
+
+  @media (min-width: $-desktop-width) {
+    width: 570px;
+    margin-left: 0;
   }
 }
 
@@ -66,6 +81,11 @@
       top: -92px;
     }
   }
+
+  @media (min-width: $-desktop-width) {
+    display: inline-flex;
+    width: 100%;
+  }
 }
 
 .group__comment {
@@ -93,6 +113,10 @@
       top: 20px;
     }
   }
+
+  @media (min-width: $-desktop-width) {
+    width: 100%;
+  }
 }
 
 .group__add {
@@ -117,7 +141,7 @@
   @media (min-width: $-tablet-width) {
     display: flex;
     flex-flow: row wrap;
-    padding: 0 70px;
+    padding: 0 30px;
 
     &::before {
       top: -67px;
