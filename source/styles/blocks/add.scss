@@ -12,6 +12,9 @@
 
   @media (min-width: $-tablet-width) {
     margin-bottom: 57px;
+    padding: 0 40px;
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
@@ -21,8 +24,9 @@
   padding: 0;
 
   @media (min-width: $-tablet-width) {
-    width: 314px;
+    width: 345px;
     margin-bottom: 52px;
+    padding-left: 40px;
   }
 }
 

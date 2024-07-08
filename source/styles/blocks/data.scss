@@ -20,6 +20,10 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: $-desktop-width) {
+    margin-left: 70px;
+  }
 }
 
 .data__email,
@@ -36,6 +40,17 @@
     padding: 0 70px;
     margin-bottom: 20px;
   }
+
+  @media (min-width: $-desktop-width) {
+    padding-left: 110px;
+  }
+}
+
+.data__phone {
+  @media (min-width: $-desktop-width) {
+    padding-left: 0;
+    padding-right: 110px;
+  }
 }
 
 .data__input {
@@ -44,4 +59,9 @@
   height: 40px;
   margin-left: 13px;
   padding: 0;
+
+  @media (min-width: $-desktop-width) {
+    height: 52px;
+    width: 489px;
+  }
 }

@@ -19,4 +19,9 @@
   &:checked::before {
     box-shadow: inset 1em 1em $-basic-green;
   }
+
+  @media (min-width: $-desktop-width) {
+    width: 40px;
+    height: 40px;
+  }
 }

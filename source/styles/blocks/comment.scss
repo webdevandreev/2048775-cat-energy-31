@@ -16,6 +16,12 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (min-width: $-desktop-width) {
+    width: 1220px;
+    margin-right: 110px;
+    margin-left: 110px;
+  }
 }
 
 .comment__story {
