@@ -116,7 +116,8 @@
 }
 
 @media (min-width: $-desktop-width) {
-  .main-nav__page-catalog.main-nav__page--current::after {
+  .main-nav__page-catalog.main-nav__page--current::after,
+  .main-nav__page-selection.main-nav__page--current::after {
     content: "";
     position: absolute;
     height: 2px;
