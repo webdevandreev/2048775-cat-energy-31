@@ -1,3 +1,8 @@
+.comment {
+  padding: 0 70px;
+  width: 100%;
+}
+
 .comment__text {
   margin: 36px 20px 0;
   padding: 14px 10px;
@@ -10,9 +15,11 @@
   border: 1px solid $-special-dark-grey;
 
   @media (min-width: $-tablet-width) {
-    width: 628px;
+    width: 100%;
+    min-height: 175px;
     margin-top: 86px;
-    margin-left: 70px;
+    margin-left: 0;
+    margin-right: 0;
     font-size: 20px;
     line-height: 30px;
   }
@@ -40,7 +47,7 @@
 
   @media (min-width: $-tablet-width) {
     width: 262px;
-    margin-left: 30px;
+    margin-left: -40px;
     padding: 0 40px;
     font-size: 36px;
     line-height: 36px;
