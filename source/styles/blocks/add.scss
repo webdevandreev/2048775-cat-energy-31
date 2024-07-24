@@ -28,6 +28,10 @@
     margin-bottom: 52px;
     padding-left: 40px;
   }
+
+  @media (min-width: $-desktop-width) {
+    width: 340px;
+  }
 }
 
 .add__input {

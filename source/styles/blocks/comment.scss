@@ -1,10 +1,20 @@
 .comment {
-  padding: 0 70px;
+  padding: 0 20px;
   width: 100%;
+
+  @media (min-width: $-tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: $-desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .comment__text {
-  margin: 36px 20px 0;
+  width: 100%;
+  min-height: 150px;
+  margin: 36px 20px 0 0;
   padding: 14px 10px;
   font-family: "Oswald", "Arilal", sans-serif;
   font-size: 16px;
@@ -17,17 +27,13 @@
   @media (min-width: $-tablet-width) {
     width: 100%;
     min-height: 175px;
-    margin-top: 86px;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 86px 0 0;
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: $-desktop-width) {
     width: 1220px;
-    margin-right: 110px;
-    margin-left: 110px;
   }
 }
 
@@ -35,6 +41,7 @@
   display: block;
   position: relative;
   width: 161px;
+  margin-left: -20px;
   padding: 0 20px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
