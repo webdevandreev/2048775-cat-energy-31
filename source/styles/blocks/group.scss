@@ -37,15 +37,13 @@
   display: grid;
   margin: 0 0 6px;
   padding: 20px 20px 5px 0;
-  border-top: 1px solid $-special-dark-grey;
-  border-bottom: 1px solid $-special-dark-grey;
-  border-left: none;
-  border-right: none;
+  border: none;
+  border-width: 1px 0; /* 1px для верхней и нижней границы, 0 для левой и правой */
+  border-style: solid;
+  border-color: $-special-dark-grey;
 
   @media (min-width: $-tablet-width) {
-    width: 628px;
-    margin-bottom: 65px;
-    margin-left: 70px;
+    margin: 0 70px 65px;
     padding-left: 3px;
     border: 1px solid $-special-dark-grey;
   }
@@ -146,5 +144,10 @@
     &::before {
       top: -67px;
     }
+  }
+
+  @media (min-width: $-desktop-width) {
+    width: 100%;
+    padding: 0 80px;
   }
 }
