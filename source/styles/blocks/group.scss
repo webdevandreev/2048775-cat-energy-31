@@ -83,6 +83,11 @@
   @media (min-width: $-desktop-width) {
     display: inline-flex;
     width: 100%;
+
+    &::before {
+      left: -50%;
+      right: -50%;
+    }
   }
 }
 
@@ -114,6 +119,11 @@
 
   @media (min-width: $-desktop-width) {
     width: 100%;
+
+    &::before {
+      left: -50%;
+      right: -50%;
+    }
   }
 }
 
@@ -149,5 +159,10 @@
   @media (min-width: $-desktop-width) {
     width: 100%;
     padding: 0 80px;
+
+    &::before {
+      left: -50%;
+      right: -50%;
+    }
   }
 }
