@@ -4,4 +4,5 @@
   min-height: 100%;
   grid-template-rows: min-content 1fr min-content;
   background-color: $-bg-white;
+  overflow-x: hidden;
 }
