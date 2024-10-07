@@ -56,13 +56,37 @@
   mask-size: 18px 13px;
   mask-repeat: no-repeat;
   background-color: #666666;
-  right: 94px;
+  right: 85px;
+
+  @media (max-width: $-mobile-width-only) {
+    right: 32px; /* adjust the value according to your design */
+  }
 }
 
 .data__phone {
   @media (min-width: $-desktop-width) {
     padding-left: 0;
     padding-right: 110px;
+  }
+}
+
+.data__phone::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  mask-image: url("../../icons/stack.svg#phone");
+  mask-size: 15px 15px;
+  mask-repeat: no-repeat;
+  background-color: #666666;
+  right: 85px;
+
+  @media (min-width: $-desktop-width) {
+    right: 125px;
+  }
+
+  @media (max-width: $-mobile-width-only) {
+    right: 32px;
   }
 }
 
