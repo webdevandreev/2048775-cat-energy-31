@@ -22,4 +22,8 @@
   @media (min-width: $-desktop-width) {
     height: 52px;
   }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
 }
