@@ -19,11 +19,22 @@
   height: 40px;
   border: 1px solid $-special-dark-grey;
 
-  @media (min-width: $-desktop-width) {
-    height: 52px;
+  &:hover {
+    border: 1px solid $-add-light-telegraph;
   }
 
-  &:hover {
-    border: 1px solid #cdcdcd;
+  &:focus {
+    border-color: $-color-black;
+    outline: none;
+    box-shadow: 0 0 5px $-color-black;
+  }
+
+  &.error {
+    border-color: $-basic-red;
+    box-shadow: 0 0 5px $-basic-red;
+  }
+
+  @media (min-width: $-desktop-width) {
+    height: 52px;
   }
 }

@@ -111,12 +111,33 @@
   width: 280px;
   height: 56px;
   margin-bottom: 16px;
-  font-family: "Oswald", "Arilal", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $-special-dark-grey;
+  padding-left: 10px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    border: 1px solid $-add-light-telegraph;
+  }
+
+  &:focus {
+    border-color: $-color-black;
+    outline: none;
+    box-shadow: 0 0 5px $-color-black;
+  }
+
+  &.error {
+    border-color: $-basic-red;
+    box-shadow: 0 0 5px $-basic-red;
+  }
+
+  &::placeholder {
+    color: $-color-dark-grey;
+  }
 
   @media (min-width: $-tablet-width) {
     width: 376px;
@@ -125,23 +146,6 @@
   @media (min-width: $-desktop-width) {
     width: 496px;
   }
-}
-
-.subscribe__input::placeholder {
-  color: $-color-dark-grey;
-  padding-left: 10px;
-}
-
-.subscribe__input:required {
-  background-color: $-bg-white;
-  border: none;
-  outline: 1px solid $-add-light-telegraph;
-}
-
-.subscribe__input:focus.subscribe__input:invalid {
-  background-color: $-bg-white;
-  border: none;
-  outline: 2px solid $-rich-pink;
 }
 
 .subscribe__button {
@@ -156,6 +160,7 @@
   background-color: $-basic-green;
   border: none;
   text-transform: uppercase;
+  cursor: pointer;
 
   @media (min-width: $-tablet-width) {
     width: 256px;

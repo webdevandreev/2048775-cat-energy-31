@@ -12,7 +12,7 @@
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/index.js" defer></script>
+  <script src="scripts/form-validation.js" defer></script>
 </head>
 
 <body class="page__body">
@@ -64,14 +64,14 @@
       <h3 class="select__subtitle">Заполните анкету, и мы подберем
         программу питания для вашего кота
       </h3>
-      <form class="select__form  group" action="https://echo.htmlacademy.ru/" method="post">
+      <form class="select__form group" action="https://echo.htmlacademy.ru/" method="post" id="cat-form">
         <fieldset class="group__element element">
           <legend class="visually-hidden">Укажите имя, вес, возраст кота</legend>
           <label class="element__name" for="name">
-            Имя:*<input class="element__input" id="name" type="text" name="worksheet" autocomplete="on">
+            Имя:*<input class="element__input required" id="name" type="text" name="worksheet" autocomplete="on" required>
           </label>
           <label class="element__name" for="mass">
-            Вес (кг):*<input class="element__input" id="mass" type="number" name="worksheet" autocomplete="on">
+            Вес (кг):*<input class="element__input required" id="mass" type="number" name="worksheet" autocomplete="on" required>
           </label>
           <label class="element__name" for="age">
             Возраст (лет):<input class="element__input" id="age" type="number" name="worksheet" autocomplete="on">
@@ -79,17 +79,17 @@
         </fieldset>
         <fieldset class="group__radio radio">
           <legend class="visually-hidden">Выберите один из показателей, похудение, набор массы или не знаю (нужен ваш совет)</legend>
-          <label class="radio__name diet" for="slim"><input class="diet__input" type="radio" id="slim" name="diet" value="slim" checked>Похудение</label>
+          <label class="radio__name diet" for="slim"><input class="diet__input" type="radio" id="slim" name="diet" value="slim" checked="checked">Похудение</label>
           <label class="radio__name diet" for="body"><input class="diet__input" type="radio" id="body" name="diet" value="body">Набор массы</label>
           <label class="radio__name diet" for="dontknow"><input class="diet__input" type="radio" id="dontknow" name="diet" value="dontknow">Не знаю (Нужен ваш совет)</label>
         </fieldset>
         <fieldset class="group__data data">
           <legend class="data__title">Контактные данные (владельца кота)</legend>
           <label class="data__email" for="email">
-            E-mail:*<input class="data__input" id="email" type="email" name="details" autocomplete="on">
+            E-mail:*<input class="data__input" id="email" type="email" name="details" autocomplete="on" placeholder="кuklachev@gmail.com" required>
           </label>
           <label class="data__phone" for="tel">
-            Телефон:*<input class="data__input" id="tel" type="tel" name="details" autocomplete="on">
+            Телефон:*<input class="data__input" id="tel" type="tel" name="details" autocomplete="on" placeholder="+7(999)999-99-99" required>
           </label>
         </fieldset>
         <fieldset class="group__comment comment">

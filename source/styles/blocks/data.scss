@@ -37,6 +37,16 @@
   align-items: center;
   text-transform: uppercase;
 
+  input {
+    &::placeholder {
+      font-family: "Oswald", "Arial", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      color: $-color-dark-grey;
+    }
+  }
+
   @media (min-width: $-tablet-width) {
     padding: 0 70px;
     margin-bottom: 20px;
@@ -55,11 +65,11 @@
   mask-image: url("../../icons/stack.svg#mail");
   mask-size: 18px 13px;
   mask-repeat: no-repeat;
-  background-color: #666666;
+  background-color: $-dark-grey;
   right: 85px;
 
   @media (max-width: $-mobile-width-only) {
-    right: 32px; /* adjust the value according to your design */
+    right: 32px;
   }
 }
 
@@ -78,7 +88,7 @@
   mask-image: url("../../icons/stack.svg#phone");
   mask-size: 15px 15px;
   mask-repeat: no-repeat;
-  background-color: #666666;
+  background-color: $-dark-grey;
   right: 85px;
 
   @media (min-width: $-desktop-width) {
@@ -91,22 +101,35 @@
 }
 
 .data__input {
-  border: 1px solid #e7e7e7;
   width: 100%;
   height: 40px;
   margin-left: 13px;
-  padding: 0;
+  padding-left: 10px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: $-color-dark-grey;
+  text-transform: uppercase;
+  border: 1px solid $-special-dark-grey;
 
-  @media (min-width: $-tablet-width) {
-    height: 52px;
+  &.focused,
+  &:focus {
+    border-color: $-color-black;
+    outline: none;
+    box-shadow: 0 0 5px $-color-black;
+  }
+
+  &.error {
+    border-color: $-basic-red;
+    box-shadow: 0 0 5px $-basic-red;
+  }
+
+  &:hover {
+    border: 1px solid $-add-light-telegraph;
   }
 
   @media (min-width: $-desktop-width) {
     height: 52px;
     width: 489px;
-  }
-
-  &:hover {
-    border: 1px solid #cdcdcd;
   }
 }
