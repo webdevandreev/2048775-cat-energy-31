@@ -1,0 +1,1 @@
+var e=document.querySelector(".subscribe__input"),s=document.querySelector(".subscribe__button");function r(t){return/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(t)}e.addEventListener("input",()=>{r(e.value)?e.classList.remove("error"):e.classList.add("error")});s.addEventListener("click",t=>{t.preventDefault(),r(e.value)||e.classList.add("error")});
